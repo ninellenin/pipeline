@@ -2,9 +2,8 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/text_pipeline/runtime/text_pipeline.runtime.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/text_pipeline/sandbox/text_pipeline.sandbox.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/languages/text_pipeline/text_pipeline.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/pipeline/pipeline.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/pipeline/sandbox/pipeline.sandbox.msd" folder="" />
     </projectModules>
   </component>
 </project>
