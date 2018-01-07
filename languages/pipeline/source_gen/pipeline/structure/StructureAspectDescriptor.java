@@ -20,6 +20,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPipeline = createDescriptorForPipeline();
   /*package*/ final ConceptDescriptor myConceptSplitSentence = createDescriptorForSplitSentence();
   /*package*/ final ConceptDescriptor myConceptSplitText = createDescriptorForSplitText();
+  /*package*/ final ConceptDescriptor myConceptTextExpression = createDescriptorForTextExpression();
   /*package*/ final ConceptDescriptor myConcepttoEnglish = createDescriptorFortoEnglish();
   /*package*/ final ConceptDescriptor myConcepttoLower = createDescriptorFortoLower();
   private final LanguageConceptSwitch myConceptIndex;
@@ -30,7 +31,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptFilter, myConceptFilterReference, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSplitSentence, myConceptSplitText, myConcepttoEnglish, myConcepttoLower);
+    return Arrays.asList(myConceptFilter, myConceptFilterReference, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSplitSentence, myConceptSplitText, myConceptTextExpression, myConcepttoEnglish, myConcepttoLower);
   }
 
   @Override
@@ -53,6 +54,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSplitSentence;
       case LanguageConceptSwitch.SplitText:
         return myConceptSplitText;
+      case LanguageConceptSwitch.TextExpression:
+        return myConceptTextExpression;
       case LanguageConceptSwitch.toEnglish:
         return myConcepttoEnglish;
       case LanguageConceptSwitch.toLower:
@@ -99,6 +102,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForPath() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "Path", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL);
     b.class_(false, false, false);
+    b.super_("pipeline.structure.TextExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x1b5e9c428d392f00L);
     b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323452922510");
     b.prop("value", 0x2a3c2aa1ff0f8afbL, "3043354323452922619");
     b.alias("path");
@@ -128,7 +132,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.parent(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1feea76a4L);
     b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/6067396029160127915");
+    b.aggregate("text", 0x1b5e9c428d392efeL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x1b5e9c428d392f00L).optional(false).ordered(true).multiple(false).origin("1972185496485965566").done();
     b.alias("splitText");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTextExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "TextExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x1b5e9c428d392f00L);
+    b.class_(false, false, false);
+    b.super_("pipeline.structure.MyExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca639c6546L);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/1972185496485965568");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorFortoEnglish() {

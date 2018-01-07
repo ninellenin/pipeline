@@ -21,7 +21,9 @@
         <child id="3043354323453076047" name="filters" index="3lbszI" />
         <child id="894693271984988820" name="output" index="1JWBhu" />
       </concept>
-      <concept id="6067396029160127915" name="pipeline.structure.SplitText" flags="ng" index="2hxWkx" />
+      <concept id="6067396029160127915" name="pipeline.structure.SplitText" flags="ng" index="2hxWkx">
+        <child id="1972185496485965566" name="text" index="2mpVaW" />
+      </concept>
       <concept id="3043354323452922510" name="pipeline.structure.Path" flags="ng" index="3lcU0J">
         <property id="3043354323452922619" name="value" index="3lcU1q" />
       </concept>
@@ -46,6 +48,13 @@
     </node>
     <node concept="2hxWkx" id="LE_GDzBaRx" role="3lbszI">
       <property role="TrG5h" value="a" />
+      <node concept="3lcU0J" id="1HuB4adeFvn" role="2mpVaW">
+        <property role="3lcU1q" value="&quot;input.txt&quot;" />
+      </node>
+    </node>
+    <node concept="2hxWkx" id="1HuB4adeLpr" role="3lbszI">
+      <property role="TrG5h" value="b" />
+      <node concept="3lcU0J" id="1HuB4adeLpz" role="2mpVaW" />
     </node>
   </node>
 </model>

@@ -17,8 +17,9 @@ public final class LanguageConceptSwitch {
   public static final int Pipeline = 5;
   public static final int SplitSentence = 6;
   public static final int SplitText = 7;
-  public static final int toEnglish = 8;
-  public static final int toLower = 9;
+  public static final int TextExpression = 8;
+  public static final int toEnglish = 9;
+  public static final int toLower = 10;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL);
@@ -30,6 +31,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x5433b88ac5b47d87L, Pipeline);
     builder.put(0x2a3c2aa1fee9ce93L, SplitSentence);
     builder.put(0x5433b88ac5b47dabL, SplitText);
+    builder.put(0x1b5e9c428d392f00L, TextExpression);
     builder.put(0x2a3c2aa1fee9d9adL, toEnglish);
     builder.put(0x2a3c2aa1fee9d938L, toLower);
     myIndex = builder.seal();

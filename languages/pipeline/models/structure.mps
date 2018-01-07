@@ -83,6 +83,13 @@
     <node concept="PrWs8" id="2CWaE7YUDsY" role="PzmwI">
       <ref role="PrY4T" node="2CWaE7YUBq$" resolve="Filter" />
     </node>
+    <node concept="1TJgyj" id="1HuB4adeiVY" role="1TKVEi">
+      <property role="IQ2ns" value="1972185496485965566" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1HuB4adeiW0" resolve="TextExpression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2CWaE7YUsUj">
     <property role="EcuMT" value="3043354323450449555" />
@@ -119,7 +126,7 @@
     <property role="EcuMT" value="3043354323452922510" />
     <property role="TrG5h" value="Path" />
     <property role="34LRSv" value="path" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="1HuB4adeiW0" resolve="TextExpression" />
     <node concept="1TJgyi" id="2CWaE7Z3SFV" role="1TKVEl">
       <property role="IQ2nx" value="3043354323452922619" />
       <property role="TrG5h" value="value" />
@@ -161,6 +168,11 @@
     <property role="EcuMT" value="894693271985218886" />
     <property role="TrG5h" value="MyExpression" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
+  <node concept="1TIwiD" id="1HuB4adeiW0">
+    <property role="EcuMT" value="1972185496485965568" />
+    <property role="TrG5h" value="TextExpression" />
+    <ref role="1TJDcQ" node="LE_GDzB6l6" resolve="MyExpression" />
   </node>
 </model>
 
