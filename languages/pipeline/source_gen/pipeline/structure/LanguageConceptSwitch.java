@@ -15,11 +15,12 @@ public final class LanguageConceptSwitch {
   public static final int Output = 3;
   public static final int Path = 4;
   public static final int Pipeline = 5;
-  public static final int SplitSentence = 6;
-  public static final int SplitText = 7;
-  public static final int TextExpression = 8;
-  public static final int toEnglish = 9;
-  public static final int toLower = 10;
+  public static final int SentenceExpression = 6;
+  public static final int SplitSentence = 7;
+  public static final int SplitText = 8;
+  public static final int TextExpression = 9;
+  public static final int toEnglish = 10;
+  public static final int toLower = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL);
@@ -29,6 +30,7 @@ public final class LanguageConceptSwitch {
     builder.put(0xc6a96ca6398e26dL, Output);
     builder.put(0x2a3c2aa1ff0f8a8eL, Path);
     builder.put(0x5433b88ac5b47d87L, Pipeline);
+    builder.put(0xc6a96ca63a273b2L, SentenceExpression);
     builder.put(0x2a3c2aa1fee9ce93L, SplitSentence);
     builder.put(0x5433b88ac5b47dabL, SplitText);
     builder.put(0x1b5e9c428d392f00L, TextExpression);

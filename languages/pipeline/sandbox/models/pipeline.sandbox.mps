@@ -24,7 +24,6 @@
       <concept id="6067396029160127915" name="pipeline.structure.SplitText" flags="ng" index="2hxWkx">
         <child id="1972185496485965566" name="text" index="2mpVaW" />
       </concept>
-      <concept id="3043354323450449555" name="pipeline.structure.SplitSentence" flags="ng" index="3kPugM" />
       <concept id="3043354323452922510" name="pipeline.structure.Path" flags="ng" index="3lcU0J">
         <property id="3043354323452922619" name="value" index="3lcU1q" />
       </concept>
@@ -53,7 +52,6 @@
         <property role="3lcU1q" value="&quot;in.txt&quot;" />
       </node>
     </node>
-    <node concept="3kPugM" id="LE_GDzCrsu" role="3lbszI" />
   </node>
   <node concept="2hxWkd" id="LE_GDzC$G4">
     <property role="TrG5h" value="SomePipeline" />

@@ -65,7 +65,7 @@
       <property role="IQ2ns" value="3043354323453076047" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="filters" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="2CWaE7YUBq$" resolve="Filter" />
     </node>
     <node concept="1TJgyj" id="LE_GDzAeak" role="1TKVEi">

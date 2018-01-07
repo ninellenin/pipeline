@@ -18,6 +18,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptOutput = createDescriptorForOutput();
   /*package*/ final ConceptDescriptor myConceptPath = createDescriptorForPath();
   /*package*/ final ConceptDescriptor myConceptPipeline = createDescriptorForPipeline();
+  /*package*/ final ConceptDescriptor myConceptSentenceExpression = createDescriptorForSentenceExpression();
   /*package*/ final ConceptDescriptor myConceptSplitSentence = createDescriptorForSplitSentence();
   /*package*/ final ConceptDescriptor myConceptSplitText = createDescriptorForSplitText();
   /*package*/ final ConceptDescriptor myConceptTextExpression = createDescriptorForTextExpression();
@@ -31,7 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptFilter, myConceptFilterReference, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSplitSentence, myConceptSplitText, myConceptTextExpression, myConcepttoEnglish, myConcepttoLower);
+    return Arrays.asList(myConceptFilter, myConceptFilterReference, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSentenceExpression, myConceptSplitSentence, myConceptSplitText, myConceptTextExpression, myConcepttoEnglish, myConcepttoLower);
   }
 
   @Override
@@ -50,6 +51,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPath;
       case LanguageConceptSwitch.Pipeline:
         return myConceptPipeline;
+      case LanguageConceptSwitch.SentenceExpression:
+        return myConceptSentenceExpression;
       case LanguageConceptSwitch.SplitSentence:
         return myConceptSplitSentence;
       case LanguageConceptSwitch.SplitText:
@@ -114,9 +117,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/6067396029160127879");
-    b.aggregate("filters", 0x2a3c2aa1ff11e24fL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1feea76a4L).optional(false).ordered(true).multiple(false).origin("3043354323453076047").done();
+    b.aggregate("filters", 0x2a3c2aa1ff11e24fL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1feea76a4L).optional(false).ordered(true).multiple(true).origin("3043354323453076047").done();
     b.aggregate("output", 0xc6a96ca6398e294L).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e26dL).optional(false).ordered(true).multiple(false).origin("894693271984988820").done();
     b.alias("pipeline");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSentenceExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "SentenceExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca63a273b2L);
+    b.class_(false, false, false);
+    b.super_("pipeline.structure.MyExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca639c6546L);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271985615794");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSplitSentence() {
@@ -130,6 +140,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForSplitText() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "SplitText", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x5433b88ac5b47dabL);
     b.class_(false, false, false);
+    b.super_("pipeline.structure.SentenceExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca63a273b2L);
     b.parent(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1feea76a4L);
     b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/6067396029160127915");
     b.aggregate("text", 0x1b5e9c428d392efeL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x1b5e9c428d392f00L).optional(false).ordered(true).multiple(false).origin("1972185496485965566").done();

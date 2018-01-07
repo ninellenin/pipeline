@@ -15,6 +15,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Output;
   private ConceptPresentation props_Path;
   private ConceptPresentation props_Pipeline;
+  private ConceptPresentation props_SentenceExpression;
   private ConceptPresentation props_SplitSentence;
   private ConceptPresentation props_SplitText;
   private ConceptPresentation props_TextExpression;
@@ -67,6 +68,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Pipeline = cpb.create();
         }
         return props_Pipeline;
+      case LanguageConceptSwitch.SentenceExpression:
+        if (props_SentenceExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("SentenceExpression");
+          props_SentenceExpression = cpb.create();
+        }
+        return props_SentenceExpression;
       case LanguageConceptSwitch.SplitSentence:
         if (props_SplitSentence == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

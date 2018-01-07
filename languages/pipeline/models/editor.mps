@@ -15,6 +15,9 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
@@ -54,6 +57,7 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -77,9 +81,10 @@
         </node>
       </node>
       <node concept="3EZMnI" id="LE_GDzARor" role="3EZMnx">
-        <node concept="3F1sOY" id="LE_GDzCtdr" role="3EZMnx">
+        <node concept="3F2HdR" id="LE_GDzD6rM" role="3EZMnx">
           <ref role="1NtTu8" to="k4u8:2CWaE7Z4u9f" resolve="filters" />
-          <node concept="ljvvj" id="LE_GDzCtef" role="3F10Kt">
+          <node concept="l2Vlx" id="LE_GDzD6rO" role="2czzBx" />
+          <node concept="ljvvj" id="LE_GDzD6rP" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>
