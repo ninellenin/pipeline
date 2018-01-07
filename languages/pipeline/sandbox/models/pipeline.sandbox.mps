@@ -21,7 +21,10 @@
         <child id="3043354323453076047" name="filters" index="3lbszI" />
         <child id="894693271984988820" name="output" index="1JWBhu" />
       </concept>
-      <concept id="6067396029160127915" name="pipeline.structure.SplitText" flags="ng" index="2hxWkx" />
+      <concept id="6067396029160127915" name="pipeline.structure.SplitText" flags="ng" index="2hxWkx">
+        <child id="1972185496485965566" name="text" index="2mpVaW" />
+      </concept>
+      <concept id="3043354323450449555" name="pipeline.structure.SplitSentence" flags="ng" index="3kPugM" />
       <concept id="3043354323452922510" name="pipeline.structure.Path" flags="ng" index="3lcU0J">
         <property id="3043354323452922619" name="value" index="3lcU1q" />
       </concept>
@@ -37,15 +40,34 @@
   <node concept="2hxWkd" id="LE_GDzBaR2">
     <property role="TrG5h" value="aaa" />
     <node concept="1JWBiB" id="LE_GDzBaR3" role="1JWBhu">
-      <node concept="1JWBbe" id="LE_GDzBaRz" role="1JWBh3">
-        <ref role="1JWBbE" node="LE_GDzBaRx" resolve="a" />
+      <node concept="1JWBbe" id="LE_GDzCrsV" role="1JWBh3">
+        <ref role="1JWBbE" node="LE_GDzCrsn" resolve="b" />
       </node>
       <node concept="3lcU0J" id="LE_GDzBaR5" role="1JWBh6">
         <property role="3lcU1q" value="&quot;output.txt&quot;" />
       </node>
     </node>
-    <node concept="2hxWkx" id="LE_GDzBaRx" role="3lbszI">
+    <node concept="2hxWkx" id="LE_GDzCrsn" role="3lbszI">
+      <property role="TrG5h" value="b" />
+      <node concept="3lcU0J" id="LE_GDzCrsr" role="2mpVaW">
+        <property role="3lcU1q" value="&quot;in.txt&quot;" />
+      </node>
+    </node>
+    <node concept="3kPugM" id="LE_GDzCrsu" role="3lbszI" />
+  </node>
+  <node concept="2hxWkd" id="LE_GDzC$G4">
+    <property role="TrG5h" value="SomePipeline" />
+    <node concept="1JWBiB" id="LE_GDzC$G6" role="1JWBhu">
+      <node concept="3lcU0J" id="LE_GDzC$G8" role="1JWBh6">
+        <property role="3lcU1q" value="out.txt" />
+      </node>
+      <node concept="1JWBbe" id="LE_GDzC$GH" role="1JWBh3">
+        <ref role="1JWBbE" node="LE_GDzC$G$" resolve="a" />
+      </node>
+    </node>
+    <node concept="2hxWkx" id="LE_GDzCBeG" role="3lbszI">
       <property role="TrG5h" value="a" />
+      <node concept="3lcU0J" id="LE_GDzCBeK" role="2mpVaW" />
     </node>
   </node>
 </model>

@@ -65,7 +65,7 @@
       <property role="IQ2ns" value="3043354323453076047" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="filters" />
-      <property role="20lbJX" value="0..n" />
+      <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2CWaE7YUBq$" resolve="Filter" />
     </node>
     <node concept="1TJgyj" id="LE_GDzAeak" role="1TKVEi">
@@ -80,6 +80,7 @@
     <property role="EcuMT" value="6067396029160127915" />
     <property role="TrG5h" value="SplitText" />
     <property role="34LRSv" value="splitText" />
+    <ref role="1TJDcQ" node="LE_GDzCBeM" resolve="SentenceExpression" />
     <node concept="PrWs8" id="2CWaE7YUDsY" role="PzmwI">
       <ref role="PrY4T" node="2CWaE7YUBq$" resolve="Filter" />
     </node>
@@ -172,6 +173,11 @@
   <node concept="1TIwiD" id="1HuB4adeiW0">
     <property role="EcuMT" value="1972185496485965568" />
     <property role="TrG5h" value="TextExpression" />
+    <ref role="1TJDcQ" node="LE_GDzB6l6" resolve="MyExpression" />
+  </node>
+  <node concept="1TIwiD" id="LE_GDzCBeM">
+    <property role="EcuMT" value="894693271985615794" />
+    <property role="TrG5h" value="SentenceExpression" />
     <ref role="1TJDcQ" node="LE_GDzB6l6" resolve="MyExpression" />
   </node>
 </model>

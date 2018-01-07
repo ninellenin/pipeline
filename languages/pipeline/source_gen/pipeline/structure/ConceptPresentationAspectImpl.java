@@ -17,6 +17,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Pipeline;
   private ConceptPresentation props_SplitSentence;
   private ConceptPresentation props_SplitText;
+  private ConceptPresentation props_TextExpression;
   private ConceptPresentation props_toEnglish;
   private ConceptPresentation props_toLower;
 
@@ -80,6 +81,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_SplitText = cpb.create();
         }
         return props_SplitText;
+      case LanguageConceptSwitch.TextExpression:
+        if (props_TextExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TextExpression");
+          props_TextExpression = cpb.create();
+        }
+        return props_TextExpression;
       case LanguageConceptSwitch.toEnglish:
         if (props_toEnglish == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
