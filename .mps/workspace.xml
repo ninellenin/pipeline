@@ -20,7 +20,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="81878ba2-3a21-45f8-a381-f35a39d10688/r:44d64712-a815-4cd7-8a6a-1a038f3a8285(TempModule81878ba2-3a21-45f8-a381-f35a39d10688/TempModel_403693680524492)">
+            <model ref="cdeaa074-e738-48d5-8bac-7cb78bb99836/r:32c0c8fc-4401-4c98-bb86-59b9c4a6b4a1(TempModulecdeaa074-e738-48d5-8bac-7cb78bb99836/TempModel_185150281042299)">
               <persistence version="9" />
               <languages>
                 <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
@@ -54,13 +54,13 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="1RHHU9tf84m">
-                <node concept="3balQm" id="1RHHU9tf84n" role="aymYE" />
-                <node concept="2Clz$F" id="1RHHU9tf84o" role="aymYO">
+              <node concept="aymSD" id="LE_GDzBfnF">
+                <node concept="3balQm" id="LE_GDzBfnG" role="aymYE" />
+                <node concept="2Clz$F" id="LE_GDzBfnH" role="aymYO">
                   <property role="TrG5h" value="CommandHolder" />
                 </node>
-                <node concept="2_V_lH" id="1RHHU9tf84p" role="1PhJh3">
-                  <ref role="2_V_lI" node="1RHHU9tf84o" resolve="CommandHolder" />
+                <node concept="2_V_lH" id="LE_GDzBfnI" role="1PhJh3">
+                  <ref role="2_V_lI" node="LE_GDzBfnH" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -84,19 +84,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pipeline" pinned="false" current-in-tab="true">
-        <entry file="mps://node://pipeline/pipeline.structure/Pipeline">
+      <file leaf-file-name="Filter" pinned="false" current-in-tab="false">
+        <entry file="mps://node://pipeline/pipeline.structure/Filter">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="63" />
+                    <property name="caretX" value="207" />
                     <property name="caretXRelative" value="48" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" />
+                    <cellInfo cellId="name">
+                      <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450492580" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -105,7 +105,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -113,72 +113,7 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
-              <node node_ref="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088283" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SplitText" pinned="false" current-in-tab="false">
-        <entry file="mps://node://pipeline#6067396029160127783/main@generator/SplitText">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_u338ov_a0a" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341565" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341567" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="HAAC_refNodeList_annotation" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341567" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341561" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="HAAC_refNodeList_annotation" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341561" />
-                    </cellIdElement>
-                  </collapsedElement>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453376235" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341561" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </restoreAlways>
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
+              <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450492580" />
             </state>
           </provider>
         </entry>
@@ -191,11 +126,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="71" />
-                    <property name="caretXRelative" value="56" />
+                    <property name="caretX" value="351" />
+                    <property name="caretXRelative" value="104" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                      <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450449555" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323453217814" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -204,7 +139,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -212,113 +147,7 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
-              <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450449555" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Path" pinned="false" current-in-tab="false">
-        <entry file="mps://node://pipeline/pipeline.structure/Path">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="279" />
-                    <property name="caretXRelative" value="32" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                      <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323452922415" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323452922415" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SomePipeline" pinned="false" current-in-tab="false">
-        <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/SomePipeline">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="31" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ya3936_a0" cellNumber="0" isInList="false">
-                      <node node_reference="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/3043354323453289941" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main" pinned="false" current-in-tab="false">
-        <entry file="mps://node://pipeline#6067396029160127783/main@generator/main">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="113">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="349" />
-                    <property name="caretXRelative" value="72" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="templateName" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323450533762" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable>
-                  <collapsedElement isCollapsed="false">
-                    <cellIdElement cellId="refNodeList_dropAttrubuteRule" cellNumber="0" isInList="false">
-                      <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323450533761" />
-                    </cellIdElement>
-                  </collapsedElement>
-                </foldable>
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
+              <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323453217814" />
             </state>
           </provider>
         </entry>
@@ -331,11 +160,11 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="71" />
-                    <property name="caretXRelative" value="56" />
+                    <property name="caretX" value="167" />
+                    <property name="caretXRelative" value="24" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                      <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/6067396029160127915" />
+                    <cellInfo cellId="property_text">
+                      <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323453252935" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -344,7 +173,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -352,24 +181,24 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
-              <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/6067396029160127915" />
+              <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323453252849" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Filter" pinned="false" current-in-tab="false">
-        <entry file="mps://node://pipeline/pipeline.structure/Filter">
+      <file leaf-file-name="Pipeline" pinned="false" current-in-tab="false">
+        <entry file="mps://node://pipeline/pipeline.structure/Pipeline">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="31" />
+                    <property name="caretX" value="83" />
                     <property name="caretXRelative" value="0" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="emptyChildrenPlaceHolder" cellNumber="0" isInList="false">
-                      <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450492580" />
+                    <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                      <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/894693271985157666" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
@@ -378,7 +207,7 @@
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -386,7 +215,142 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
-              <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450492580" />
+              <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323450452402" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterReference" pinned="false" current-in-tab="false">
+        <entry file="mps://node://pipeline/pipeline.structure/FilterReference">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="87" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_conceptAlias">
+                      <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271984989188" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271984989188" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Output" pinned="false" current-in-tab="false">
+        <entry file="mps://node://pipeline/pipeline.structure/Output">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="51" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                      <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/894693271984988900" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/894693271984988858" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aaa" pinned="false" current-in-tab="true">
+        <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/aaa">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="15" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="property_name">
+                      <node node_reference="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyExpression" pinned="false" current-in-tab="false">
+        <entry file="mps://node://pipeline/pipeline.structure/MyExpression">
+          <provider selected="true" editor-type-id="MPSFileEditor">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack>
+                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                    <property name="hasNonTrivialSelection" value="false" />
+                    <property name="caretX" value="15" />
+                    <property name="caretXRelative" value="0" />
+                    <property name="sideSelectDirection" value="NONE" />
+                    <cellInfo cellId="Constant_ueqr71_d0">
+                      <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271985218886" />
+                    </cellInfo>
+                  </stackElement>
+                </selectionStack>
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+              </memento>
+              <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+                <selectionStack />
+                <errorMarkers />
+                <transactionalProperties />
+                <foldable />
+                <restoreAlways />
+                <enabledHints />
+              </inspectorMemento>
+              <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271985218886" />
             </state>
           </provider>
         </entry>
@@ -412,7 +376,7 @@
       </array>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1314" />
@@ -489,6 +453,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Favorites" />
+      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -497,71 +463,15 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7655a5e7-076c-42d6-b885-3f94b3d29c6b(pipeline)" />
+              <option name="myItemId" value="41ff3fb8-0974-4b8a-9d11-bb9664bffc25" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pipeline#6067396029160127783" />
+              <option name="myItemId" value="pipeline" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator) in IdeaFile{file:///home/yulya/Yandex.Disk/Univer/DT/languages/pipeline/generator/template/main@generator.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MPS" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7655a5e7-076c-42d6-b885-3f94b3d29c6b(pipeline)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor) in IdeaFile{file:///home/yulya/Yandex.Disk/Univer/DT/languages/pipeline/models/editor.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="closures" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
+              <option name="myItemId" value="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox) in IdeaFile{file://D:/PipelineRight/languages/pipeline/sandbox/models/pipeline.sandbox.mps}" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -573,127 +483,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="closures" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:6a4f00d3-a72e-48b0-96be-a5139db9536c(jetbrains.mps.baseLanguage.closures) in IdeaFile{jar:///home/yulya/MPS 2017.3/MPS 2017.3/lib/mps-closures.jar!/modules/closures.runtime/jetbrains/mps/baseLanguage/closures.mpb}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:35e808a0-0758-4b03-9053-4675a7ced44c(jetbrains.mps.baseLanguage.closures.runtime) in IdeaFile{jar:///home/yulya/MPS 2017.3/MPS 2017.3/lib/mps-closures.jar!/modules/closures.runtime/jetbrains/mps/baseLanguage/closures/runtime.mpb}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="closures" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jetbrains" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:6a4f00d3-a72e-48b0-96be-a5139db9536c(jetbrains.mps.baseLanguage.closures) in IdeaFile{jar:///home/yulya/MPS 2017.3/MPS 2017.3/lib/mps-closures.jar!/modules/closures.runtime/jetbrains/mps/baseLanguage/closures.mpb}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7655a5e7-076c-42d6-b885-3f94b3d29c6b(pipeline)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure) in IdeaFile{file:///home/yulya/Yandex.Disk/Univer/DT/languages/pipeline/models/structure.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="closures" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="closures" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Modules Pool" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Solutions" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7655a5e7-076c-42d6-b885-3f94b3d29c6b(pipeline)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pipeline#6067396029160127783" />
+              <option name="myItemId" value="41ff3fb8-0974-4b8a-9d11-bb9664bffc25" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -707,32 +501,22 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
-          <SELECTED>
+          <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="7655a5e7-076c-42d6-b885-3f94b3d29c6b(pipeline)" />
+              <option name="myItemId" value="41ff3fb8-0974-4b8a-9d11-bb9664bffc25" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pipeline#6067396029160127783" />
+              <option name="myItemId" value="pipeline" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator) in IdeaFile{file:///home/yulya/Yandex.Disk/Univer/DT/languages/pipeline/generator/template/main@generator.mps}" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="3043354323453088283" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </SELECTED>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
-      <pane id="FileSystem" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -881,14 +665,13 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration>C:\Users\Александр\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1334" height="768" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
       <window_info id="Bookmarks" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32579187" sideWeight="0.5263975" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Model Checker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32287583" sideWeight="0.485" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Menu Trace" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Migration" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -896,20 +679,20 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Class Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Module Dependencies" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.4937888" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32579187" sideWeight="0.5419255" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.4937888" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspector" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36721727" sideWeight="0.494375" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Usages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36802414" sideWeight="0.51319873" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36601308" sideWeight="0.505625" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Context Actions" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33182505" sideWeight="0.4937888" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.4937888" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="RefactoringView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.49689442" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32730016" sideWeight="0.48757765" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Node Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.48757765" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Typechecker State" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880846" sideWeight="0.4937888" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.4937888" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Supertypes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2748447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28984576" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Typesystem Trace" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Classpath Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cell Explorer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -936,39 +719,33 @@
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[InterfaceConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[InterfaceConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[InterfaceConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/toEnglish">
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline/pipeline.structure/Path">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="247" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_extends" cellNumber="0" isInList="false">
-                  <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450452397" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323452922510" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -977,7 +754,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453082766" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985196234" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -985,348 +762,32 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450452397" />
+          <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323452922510" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://pipeline/pipeline.structure/toLower">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="231" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="empty_extends" cellNumber="0" isInList="false">
-                  <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450452280" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088228" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450452280" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/&lt;no name&gt;[TemplateDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/Node" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConstrainedDataTypeDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://pipeline@transient162/pipeline.actions@0/null_PasteWrapper_0" />
-    <entry file="mps://node://pipeline/pipeline.editor/null_Editor" />
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/&lt;no name&gt;[MappingConfiguration]" />
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/null" />
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/null" />
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/null" />
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/IFilter">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="95" />
-                <property name="caretXRelative" value="24" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="methodName" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088526" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323452560893" saveSessionState="false" viewPositionX="0" viewPositionY="-7">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/null" />
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/null" />
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/SplitSentence">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="199" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_1x071y_a6a" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453090147" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453089562" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453089562" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453089444" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453089444" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453090147" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323452564738" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/null" />
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/null" />
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/SplitText">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_u338ov_a0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341565" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341567" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341567" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341561" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="HAAC_refNodeList_annotation" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341561" />
-                </cellIdElement>
-              </collapsedElement>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453376235" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="Collection_fao2ea_a" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453341561" />
-                </cellIdElement>
-              </collapsedElement>
-            </restoreAlways>
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/languages/pipeline/sandbox/source_gen/pipeline/sandbox/SomePipeline.java">
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="file://$PROJECT_DIR$/languages/pipeline/generator/source_gen/main/QueriesGenerated.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="27" lean-forward="false" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+        <state relative-caret-position="272">
+          <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://pipeline/pipeline.structure/SplitText">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/6067396029160127915" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/6067396029160127915" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://jetbrains.mps.baseLanguage/jetbrains.mps.baseLanguage.structure/StringLiteral">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)/1070475926800" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)/1070475926800" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)/1070475926800" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://pipeline#6067396029160127783/main@generator/main">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="113">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="349" />
-                <property name="caretXRelative" value="72" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="templateName" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323450533762" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable>
-              <collapsedElement isCollapsed="false">
-                <cellIdElement cellId="refNodeList_dropAttrubuteRule" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323450533761" />
-                </cellIdElement>
-              </collapsedElement>
-            </foldable>
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/SomePipeline">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="31" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ya3936_a0" cellNumber="0" isInList="false">
-                  <node node_reference="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/3043354323453289941" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
     <entry file="mps://node://pipeline/pipeline.structure/Filter">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -1334,10 +795,10 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="31" />
-                <property name="caretXRelative" value="0" />
+                <property name="caretX" value="207" />
+                <property name="caretXRelative" value="48" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="emptyChildrenPlaceHolder" cellNumber="0" isInList="false">
+                <cellInfo cellId="name">
                   <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450492580" />
                 </cellInfo>
               </stackElement>
@@ -1347,7 +808,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1359,6 +820,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/SomePipeline" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/nane" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/asdf" />
+    <entry file="mps://node://pipeline/pipeline.structure/&lt;no name&gt;[ConceptDeclaration]" />
+    <entry file="mps://node://pipeline/pipeline.structure/FilterReference">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="87" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_conceptAlias">
+                  <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271984989188" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271984989188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/c" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/&lt;no name&gt;[Pipeline]" />
     <entry file="mps://node://pipeline/pipeline.structure/SplitSentence">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -1366,11 +871,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="71" />
-                <property name="caretXRelative" value="56" />
+                <property name="caretX" value="351" />
+                <property name="caretXRelative" value="104" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Constant_ueqr71_c0a" cellNumber="0" isInList="false">
-                  <node node_reference="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450449555" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323453217814" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1379,7 +884,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1387,22 +892,22 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450449555" />
+          <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323453217814" />
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://pipeline/pipeline.structure/Path">
+    <entry file="mps://node://pipeline/pipeline.structure/SplitText">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="279" />
-                <property name="caretXRelative" value="32" />
+                <property name="caretX" value="167" />
+                <property name="caretXRelative" value="24" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name" cellNumber="0" isInList="false">
-                  <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323452922415" />
+                <cellInfo cellId="property_text">
+                  <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323453252935" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1411,7 +916,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1419,7 +924,7 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323452922415" />
+          <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323453252849" />
         </state>
       </provider>
     </entry>
@@ -1430,11 +935,11 @@
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                 <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="63" />
-                <property name="caretXRelative" value="48" />
+                <property name="caretX" value="83" />
+                <property name="caretXRelative" value="0" />
                 <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="ALIAS_EDITOR_COMPONENT" cellNumber="0" isInList="false">
-                  <node node_reference="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                  <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/894693271985157666" />
                 </cellInfo>
               </stackElement>
             </selectionStack>
@@ -1443,7 +948,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088284" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1451,7 +956,70 @@
             <restoreAlways />
             <enabledHints />
           </inspectorMemento>
-          <node node_ref="r:aced4808-bdc8-4ffa-b374-99e940f4946c(main@generator)/3043354323453088283" />
+          <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/3043354323450452402" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://pipeline/pipeline.structure/Output">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="51" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="ReadOnlyModelAccessor_mtiojs_a">
+                  <node node_reference="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/894693271984988900" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d761c877-370b-4dba-8696-04cc66281a16(pipeline.editor)/894693271984988858" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://pipeline.sandbox/pipeline.sandbox/aaa">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="15" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:bd37d6e6-e10c-4185-aecd-5435ab1663ee(pipeline.sandbox)/894693271985237442" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
         </state>
       </provider>
     </entry>

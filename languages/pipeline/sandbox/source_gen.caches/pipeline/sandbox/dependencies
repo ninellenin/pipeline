@@ -1,16 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dependenciesRoot>
-  <dependency className="pipeline.sandbox.SomePipeline" file="SomePipeline.java">
-    <classNode dependClassName="java.io.BufferedReader" />
-    <classNode dependClassName="java.io.FileOutputStream" />
-    <classNode dependClassName="java.io.FileReader" />
-    <classNode dependClassName="java.io.PrintWriter" />
-    <classNode dependClassName="java.lang.Exception" />
-    <classNode dependClassName="java.lang.Runnable" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
-    <classNode dependClassName="java.lang.Thread" />
-    <classNode dependClassName="java.util.concurrent.ConcurrentLinkedQueue" />
-  </dependency>
-</dependenciesRoot>
+<dependenciesRoot />
 

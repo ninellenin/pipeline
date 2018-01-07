@@ -10,16 +10,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int Filter = 0;
-  public static final int Path = 1;
-  public static final int Pipeline = 2;
-  public static final int SplitSentence = 3;
-  public static final int SplitText = 4;
-  public static final int toEnglish = 5;
-  public static final int toLower = 6;
+  public static final int FilterReference = 1;
+  public static final int MyExpression = 2;
+  public static final int Output = 3;
+  public static final int Path = 4;
+  public static final int Pipeline = 5;
+  public static final int SplitSentence = 6;
+  public static final int SplitText = 7;
+  public static final int toEnglish = 8;
+  public static final int toLower = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL);
     builder.put(0x2a3c2aa1feea76a4L, Filter);
+    builder.put(0xc6a96ca6398e404L, FilterReference);
+    builder.put(0xc6a96ca639c6546L, MyExpression);
+    builder.put(0xc6a96ca6398e26dL, Output);
     builder.put(0x2a3c2aa1ff0f8a8eL, Path);
     builder.put(0x5433b88ac5b47d87L, Pipeline);
     builder.put(0x2a3c2aa1fee9ce93L, SplitSentence);

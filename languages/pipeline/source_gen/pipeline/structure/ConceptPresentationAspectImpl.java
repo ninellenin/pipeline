@@ -10,6 +10,9 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_Filter;
+  private ConceptPresentation props_FilterReference;
+  private ConceptPresentation props_MyExpression;
+  private ConceptPresentation props_Output;
   private ConceptPresentation props_Path;
   private ConceptPresentation props_Pipeline;
   private ConceptPresentation props_SplitSentence;
@@ -28,6 +31,27 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Filter = cpb.create();
         }
         return props_Filter;
+      case LanguageConceptSwitch.FilterReference:
+        if (props_FilterReference == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e404L, 0xc6a96ca6398e420L, "filter", "", "");
+          props_FilterReference = cpb.create();
+        }
+        return props_FilterReference;
+      case LanguageConceptSwitch.MyExpression:
+        if (props_MyExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("MyExpression");
+          props_MyExpression = cpb.create();
+        }
+        return props_MyExpression;
+      case LanguageConceptSwitch.Output:
+        if (props_Output == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Output");
+          props_Output = cpb.create();
+        }
+        return props_Output;
       case LanguageConceptSwitch.Path:
         if (props_Path == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -45,28 +69,28 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.SplitSentence:
         if (props_SplitSentence == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("SentenceToTokens");
+          cpb.presentationByName();
           props_SplitSentence = cpb.create();
         }
         return props_SplitSentence;
       case LanguageConceptSwitch.SplitText:
         if (props_SplitText == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("splitText");
+          cpb.presentationByName();
           props_SplitText = cpb.create();
         }
         return props_SplitText;
       case LanguageConceptSwitch.toEnglish:
         if (props_toEnglish == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TranslaitTokensToEnglish");
+          cpb.presentationByName();
           props_toEnglish = cpb.create();
         }
         return props_toEnglish;
       case LanguageConceptSwitch.toLower:
         if (props_toLower == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("TokensToLowerCase");
+          cpb.presentationByName();
           props_toLower = cpb.create();
         }
         return props_toLower;

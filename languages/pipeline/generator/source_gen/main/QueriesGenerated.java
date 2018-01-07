@@ -11,10 +11,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 @Generated
 public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_3043354323450833379(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x5433b88ac5b47d87L, 0x2a3c2aa1ff106569L, "input")), MetaAdapterFactory.getProperty(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL, 0x2a3c2aa1ff0f8afbL, "value"));
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode()), MetaAdapterFactory.getProperty(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL, 0x2a3c2aa1ff0f8afbL, "value"));
   }
   public static Object propertyMacro_GetPropertyValue_3043354323452799879(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x5433b88ac5b47d87L, 0x2a3c2aa1ff10656eL, "output")), MetaAdapterFactory.getProperty(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL, 0x2a3c2aa1ff0f8afbL, "value"));
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode()), MetaAdapterFactory.getProperty(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL, 0x2a3c2aa1ff0f8afbL, "value"));
   }
   public static Object propertyMacro_GetPropertyValue_3043354323450693642(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));

@@ -13,6 +13,9 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptFilter = createDescriptorForFilter();
+  /*package*/ final ConceptDescriptor myConceptFilterReference = createDescriptorForFilterReference();
+  /*package*/ final ConceptDescriptor myConceptMyExpression = createDescriptorForMyExpression();
+  /*package*/ final ConceptDescriptor myConceptOutput = createDescriptorForOutput();
   /*package*/ final ConceptDescriptor myConceptPath = createDescriptorForPath();
   /*package*/ final ConceptDescriptor myConceptPipeline = createDescriptorForPipeline();
   /*package*/ final ConceptDescriptor myConceptSplitSentence = createDescriptorForSplitSentence();
@@ -27,7 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptFilter, myConceptPath, myConceptPipeline, myConceptSplitSentence, myConceptSplitText, myConcepttoEnglish, myConcepttoLower);
+    return Arrays.asList(myConceptFilter, myConceptFilterReference, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSplitSentence, myConceptSplitText, myConcepttoEnglish, myConcepttoLower);
   }
 
   @Override
@@ -36,6 +39,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myConceptIndex.index(id)) {
       case LanguageConceptSwitch.Filter:
         return myConceptFilter;
+      case LanguageConceptSwitch.FilterReference:
+        return myConceptFilterReference;
+      case LanguageConceptSwitch.MyExpression:
+        return myConceptMyExpression;
+      case LanguageConceptSwitch.Output:
+        return myConceptOutput;
       case LanguageConceptSwitch.Path:
         return myConceptPath;
       case LanguageConceptSwitch.Pipeline:
@@ -60,7 +69,31 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForFilter() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "Filter", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1feea76a4L);
     b.interface_();
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/3043354323450492580");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForFilterReference() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "FilterReference", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e404L);
+    b.class_(false, false, false);
+    b.super_("pipeline.structure.MyExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca639c6546L);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271984989188");
+    b.associate("filter", 0xc6a96ca6398e420L).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1feea76a4L).optional(false).origin("894693271984989216").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMyExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "MyExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca639c6546L);
+    b.class_(false, false, false);
+    b.super_("jetbrains.mps.baseLanguage.structure.Expression", 0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271985218886");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForOutput() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "Output", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e26dL);
+    b.class_(false, false, false);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271984988781");
+    b.aggregate("from", 0xc6a96ca6398e289L).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca639c6546L).optional(false).ordered(true).multiple(false).origin("894693271984988809").done();
+    b.aggregate("to", 0xc6a96ca6398e28cL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL).optional(false).ordered(true).multiple(false).origin("894693271984988812").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPath() {
@@ -77,9 +110,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
     b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/6067396029160127879");
-    b.aggregate("input", 0x2a3c2aa1ff106569L).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL).optional(false).ordered(true).multiple(false).origin("3043354323452978537").done();
-    b.aggregate("output", 0x2a3c2aa1ff10656eL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL).optional(false).ordered(true).multiple(false).origin("3043354323452978542").done();
     b.aggregate("filters", 0x2a3c2aa1ff11e24fL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1feea76a4L).optional(true).ordered(true).multiple(true).origin("3043354323453076047").done();
+    b.aggregate("output", 0xc6a96ca6398e294L).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e26dL).optional(false).ordered(true).multiple(false).origin("894693271984988820").done();
     b.alias("pipeline");
     return b.create();
   }
