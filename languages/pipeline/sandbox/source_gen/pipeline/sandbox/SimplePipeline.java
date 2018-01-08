@@ -29,8 +29,8 @@ public class SimplePipeline {
       Item item = input.getItem();
 
       while (!((item.getState() == Item.State.KEY_WORD && item.getValue().equals(TextItem.END_OF_TEXT)))) {
-        if (item.getState() != Item.State.EMPTY) {
-          System.out.println("Try print!!!");
+        if (item.getState() != Item.State.EMPTY && !(item.isBeginOfText())) {
+          System.out.println("Item state: " + item.getState() + "\n" + "Item value: " + item.getValue());
           output.write(item.getValue());
         }
         item = input.getItem();
@@ -45,8 +45,8 @@ public class SimplePipeline {
 
   public SimplePipeline() {
     System.out.println("Init start");
-    filter = new SplitText(new Reader("input.txt"));
-    writer = new SimplePipeline.Writer("output.txt", filter);
+    filter = new SplitText(new Reader("D:/PipelineRight/input.txt"));
+    writer = new SimplePipeline.Writer("D:/output.txt", filter);
     System.out.println("Init finish");
   }
 

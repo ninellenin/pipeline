@@ -77,6 +77,7 @@
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
         <property id="8606350594693632173" name="isTransient" index="eg7rD" />
         <property id="1240249534625" name="isVolatile" index="34CwA1" />
@@ -130,6 +131,7 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -460,9 +462,13 @@
                     <node concept="2ShNRf" id="2oZew0UdDWq" role="33vP2m">
                       <node concept="1pGfFk" id="2oZew0UdE7D" role="2ShVmc">
                         <ref role="37wK5l" node="2oZew0Ud27l" resolve="SentenceItem" />
-                        <node concept="Rm8GO" id="2oZew0UdEhd" role="37wK5m">
-                          <ref role="Rm8GQ" node="2oZew0UcOmk" resolve="STR" />
-                          <ref role="1Px2BO" node="2oZew0UcOhe" resolve="Item.State" />
+                        <node concept="2OqwBi" id="2oZew0UjWxB" role="37wK5m">
+                          <node concept="37vLTw" id="2oZew0UjWl5" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1HuB4adggp0" resolve="item" />
+                          </node>
+                          <node concept="liA8E" id="2oZew0UjWMT" role="2OqNvi">
+                            <ref role="37wK5l" node="2oZew0UcOGK" resolve="getState" />
+                          </node>
                         </node>
                         <node concept="2OqwBi" id="2oZew0UdEv6" role="37wK5m">
                           <node concept="37vLTw" id="2oZew0UdEmV" role="2Oq$k0">
@@ -744,6 +750,43 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2oZew0UjfnG" role="jymVt" />
+    <node concept="3clFb_" id="2oZew0UjfHC" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="isBeginOfText" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2oZew0UjfHF" role="3clF47">
+        <node concept="3cpWs6" id="2oZew0UjhQG" role="3cqZAp">
+          <node concept="1Wc70l" id="2oZew0UjgCE" role="3cqZAk">
+            <node concept="2OqwBi" id="2oZew0UjgQS" role="3uHU7w">
+              <node concept="37vLTw" id="2oZew0UjgFI" role="2Oq$k0">
+                <ref role="3cqZAo" node="2oZew0UcOvL" resolve="value" />
+              </node>
+              <node concept="liA8E" id="2oZew0Ujh5R" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object):boolean" resolve="equals" />
+                <node concept="10M0yZ" id="2oZew0Ujhm0" role="37wK5m">
+                  <ref role="1PxDUh" node="2oZew0Ud1Vc" resolve="TextItem" />
+                  <ref role="3cqZAo" node="2oZew0Ue4qL" resolve="BEGIN_OF_TEXT" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="2oZew0Ujgjt" role="3uHU7B">
+              <node concept="37vLTw" id="2oZew0UjfPV" role="3uHU7B">
+                <ref role="3cqZAo" node="2oZew0UcOtD" resolve="state" />
+              </node>
+              <node concept="Rm8GO" id="2oZew0UjgpN" role="3uHU7w">
+                <ref role="Rm8GQ" node="2oZew0Ue3sa" resolve="KEY_WORD" />
+                <ref role="1Px2BO" node="2oZew0UcOhe" resolve="Item.State" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2oZew0UjfAb" role="1B3o_S" />
+      <node concept="10P_77" id="2oZew0UjfHx" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="2oZew0UcOwr" role="jymVt" />
     <node concept="3clFb_" id="2oZew0UcOGK" role="jymVt">
       <property role="1EzhhJ" value="false" />
@@ -980,7 +1023,7 @@
                     <node concept="2ShNRf" id="2CWaE7YVTWJ" role="37wK5m">
                       <node concept="1pGfFk" id="1HuB4adfpEp" role="2ShVmc">
                         <ref role="37wK5l" to="guwi:~FileReader.&lt;init&gt;(java.lang.String)" resolve="FileReader" />
-                        <node concept="37vLTw" id="1HuB4adfpIj" role="37wK5m">
+                        <node concept="37vLTw" id="2oZew0Ukjrm" role="37wK5m">
                           <ref role="3cqZAo" node="1HuB4adfnX4" resolve="filename" />
                         </node>
                       </node>
@@ -1072,7 +1115,7 @@
                     <ref role="1Px2BO" node="2oZew0UcOhe" resolve="Item.State" />
                     <ref role="Rm8GQ" node="2oZew0Ue3sa" resolve="KEY_WORD" />
                   </node>
-                  <node concept="10M0yZ" id="2oZew0Uf90h" role="37wK5m">
+                  <node concept="10M0yZ" id="2oZew0Uk3g3" role="37wK5m">
                     <ref role="3cqZAo" node="2oZew0Ue4qL" resolve="BEGIN_OF_TEXT" />
                     <ref role="1PxDUh" node="2oZew0Ud1Vc" resolve="TextItem" />
                   </node>
@@ -1085,6 +1128,25 @@
           <node concept="3clFbS" id="1HuB4adfEQM" role="SfCbr">
             <node concept="2$JKZl" id="2CWaE7YW6xU" role="3cqZAp">
               <node concept="3clFbS" id="2CWaE7YW6xW" role="2LFqv$">
+                <node concept="3clFbF" id="2oZew0UjONc" role="3cqZAp">
+                  <node concept="2OqwBi" id="2oZew0UjONd" role="3clFbG">
+                    <node concept="10M0yZ" id="2oZew0UjONe" role="2Oq$k0">
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    </node>
+                    <node concept="liA8E" id="2oZew0UjONf" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String):void" resolve="println" />
+                      <node concept="3cpWs3" id="2oZew0UjyHY" role="37wK5m">
+                        <node concept="37vLTw" id="2oZew0UjQHE" role="3uHU7w">
+                          <ref role="3cqZAo" node="2CWaE7Z2LPh" resolve="str" />
+                        </node>
+                        <node concept="Xl_RD" id="2oZew0UjPRS" role="3uHU7B">
+                          <property role="Xl_RC" value="I put: " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbF" id="2CWaE7YWeW_" role="3cqZAp">
                   <node concept="2OqwBi" id="2CWaE7YWjRK" role="3clFbG">
                     <node concept="37vLTw" id="1HuB4adfEE6" role="2Oq$k0">

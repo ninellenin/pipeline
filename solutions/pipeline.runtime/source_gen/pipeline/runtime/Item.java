@@ -18,6 +18,10 @@ public class Item {
     this.value = value;
   }
 
+  public boolean isBeginOfText() {
+    return state == Item.State.KEY_WORD && value.equals(TextItem.BEGIN_OF_TEXT);
+  }
+
   public Item.State getState() {
     return state;
   }

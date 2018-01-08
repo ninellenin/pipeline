@@ -25,7 +25,7 @@ public class SplitText extends Filter<TextItem, SentenceItem> {
       if (item.getState() != Item.State.EMPTY) {
         System.out.println("Try print!!!");
 
-        SentenceItem itemOutput = new SentenceItem(Item.State.STR, item.getValue());
+        SentenceItem itemOutput = new SentenceItem(item.getState(), item.getValue());
         output.add(itemOutput);
       }
       item = input.getItem();

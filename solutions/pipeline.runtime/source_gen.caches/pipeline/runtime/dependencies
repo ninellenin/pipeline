@@ -6,6 +6,7 @@
   </dependency>
   <dependency className="pipeline.runtime.Item" file="Item.java">
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="pipeline.runtime.TextItem" />
   </dependency>
   <dependency className="pipeline.runtime.Reader" file="Reader.java">
     <classNode dependClassName="java.io.BufferedReader" />
@@ -14,6 +15,7 @@
     <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.util.concurrent.ConcurrentLinkedQueue" />
     <classNode dependClassName="pipeline.runtime.Item" />
     <classNode dependClassName="pipeline.runtime.TextItem" />
