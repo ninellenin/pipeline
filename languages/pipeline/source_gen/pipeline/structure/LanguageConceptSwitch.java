@@ -9,23 +9,25 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int ConcatenateTexts = 0;
-  public static final int FilterExpression = 1;
-  public static final int MergeSentences = 2;
-  public static final int MergeTokens = 3;
-  public static final int MyExpression = 4;
-  public static final int Output = 5;
-  public static final int Path = 6;
-  public static final int Pipeline = 7;
-  public static final int SentenceExpression = 8;
-  public static final int SplitSentence = 9;
-  public static final int SplitText = 10;
-  public static final int TextExpression = 11;
-  public static final int TokenExpression = 12;
-  public static final int UpperCaseToken = 13;
+  public static final int ChooseLongestText = 0;
+  public static final int ConcatenateTexts = 1;
+  public static final int FilterExpression = 2;
+  public static final int MergeSentences = 3;
+  public static final int MergeTokens = 4;
+  public static final int MyExpression = 5;
+  public static final int Output = 6;
+  public static final int Path = 7;
+  public static final int Pipeline = 8;
+  public static final int SentenceExpression = 9;
+  public static final int SplitSentence = 10;
+  public static final int SplitText = 11;
+  public static final int TextExpression = 12;
+  public static final int TokenExpression = 13;
+  public static final int UpperCaseToken = 14;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL);
+    builder.put(0x7f95c2570815fac4L, ChooseLongestText);
     builder.put(0x263f3a003a63e943L, ConcatenateTexts);
     builder.put(0xc6a96ca6398e404L, FilterExpression);
     builder.put(0x674b7ca01205b88eL, MergeSentences);

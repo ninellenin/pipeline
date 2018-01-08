@@ -8,6 +8,7 @@ import java.io.FileOutputStream;
 import java.io.FileNotFoundException;
 import pipeline.runtime.Item;
 import pipeline.runtime.TextItem;
+import pipeline.runtime.ChooseLongestText;
 import pipeline.runtime.ConcatenateTexts;
 import pipeline.runtime.Reader;
 import pipeline.runtime.MergeSentences;
@@ -49,7 +50,7 @@ public class SomePipeline {
 
   public SomePipeline() {
     System.out.println("Init start");
-    filter = new ConcatenateTexts(new Reader("D:/PipelineRight/input.txt"), new MergeSentences(new MergeTokens(new UpperCaseToken(new SplitSentence(new SplitText(new Reader("D:/PipelineRight/input.txt")))))), null);
+    filter = new ChooseLongestText(new ConcatenateTexts(new Reader("D:/PipelineRight/input.txt"), new MergeSentences(new MergeTokens(new UpperCaseToken(new SplitSentence(new SplitText(new Reader("D:/PipelineRight/input.txt")))))), null), new Reader("D:/PipelineRight/input.txt"), null);
     writer = new SomePipeline.Writer("D:/output.txt", filter);
     System.out.println("Init finish");
   }

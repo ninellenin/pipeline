@@ -378,5 +378,51 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7YlK_s85vFE">
+    <ref role="1XX52x" to="k4u8:7YlK_s85vF4" resolve="ChooseLongestText" />
+    <node concept="3EZMnI" id="7YlK_s85vFG" role="2wV5jI">
+      <node concept="l2Vlx" id="7YlK_s85vFH" role="2iSdaV" />
+      <node concept="3F0ifn" id="7YlK_s85vFI" role="3EZMnx">
+        <property role="3F0ifm" value="chooseLongestText" />
+      </node>
+      <node concept="3F0ifn" id="7YlK_s85vFJ" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <node concept="3mYdg7" id="7YlK_s85vFK" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+        <node concept="ljvvj" id="7YlK_s85vFL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7YlK_s85vFM" role="3EZMnx">
+        <node concept="l2Vlx" id="7YlK_s85vFN" role="2iSdaV" />
+        <node concept="lj46D" id="7YlK_s85vFO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F2HdR" id="7YlK_s85vFT" role="3EZMnx">
+          <ref role="1NtTu8" to="k4u8:7YlK_s85vFw" resolve="texts" />
+          <node concept="l2Vlx" id="7YlK_s85vFU" role="2czzBx" />
+          <node concept="pj6Ft" id="7YlK_s85vFV" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="7YlK_s85vFW" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="7YlK_s85vFX" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="pj6Ft" id="7YlK_s85vHA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7YlK_s85vG7" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="3mYdg7" id="7YlK_s85vG8" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

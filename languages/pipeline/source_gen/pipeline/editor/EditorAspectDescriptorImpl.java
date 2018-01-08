@@ -18,22 +18,24 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     SAbstractConcept cncpt_a0a = ((SAbstractConcept) concept);
     switch (index_xbvbvu_a0a.index(cncpt_a0a)) {
       case 0:
-        return Collections.<ConceptEditor>singletonList(new ConcatenateTexts_Editor());
+        return Collections.<ConceptEditor>singletonList(new ChooseLongestText_Editor());
       case 1:
-        return Collections.<ConceptEditor>singletonList(new MergeSentences_Editor());
+        return Collections.<ConceptEditor>singletonList(new ConcatenateTexts_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new MergeTokens_Editor());
+        return Collections.<ConceptEditor>singletonList(new MergeSentences_Editor());
       case 3:
-        return Collections.<ConceptEditor>singletonList(new Output_Editor());
+        return Collections.<ConceptEditor>singletonList(new MergeTokens_Editor());
       case 4:
-        return Collections.<ConceptEditor>singletonList(new Path_Editor());
+        return Collections.<ConceptEditor>singletonList(new Output_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new Pipeline_Editor());
+        return Collections.<ConceptEditor>singletonList(new Path_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new SplitSentence_Editor());
+        return Collections.<ConceptEditor>singletonList(new Pipeline_Editor());
       case 7:
-        return Collections.<ConceptEditor>singletonList(new SplitText_Editor());
+        return Collections.<ConceptEditor>singletonList(new SplitSentence_Editor());
       case 8:
+        return Collections.<ConceptEditor>singletonList(new SplitText_Editor());
+      case 9:
         return Collections.<ConceptEditor>singletonList(new UpperCaseToken_Editor());
       default:
     }
@@ -42,5 +44,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex index_xbvbvu_a0a = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x263f3a003a63e943L), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x674b7ca01205b88eL), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x674b7ca012123431L), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e26dL), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x5433b88ac5b47d87L), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1fee9ce93L), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x5433b88ac5b47dabL), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x7f95c257080daea9L)).seal();
+  private static final ConceptSwitchIndex index_xbvbvu_a0a = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x7f95c2570815fac4L), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x263f3a003a63e943L), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x674b7ca01205b88eL), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x674b7ca012123431L), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e26dL), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1ff0f8a8eL), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x5433b88ac5b47d87L), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1fee9ce93L), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x5433b88ac5b47dabL), MetaIdFactory.conceptId(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x7f95c257080daea9L)).seal();
 }

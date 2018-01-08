@@ -9,6 +9,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="pipeline.runtime.ChooseLongestText" />
     <classNode dependClassName="pipeline.runtime.ConcatenateTexts" />
     <classNode dependClassName="pipeline.runtime.Filter" />
     <classNode dependClassName="pipeline.runtime.Item" />

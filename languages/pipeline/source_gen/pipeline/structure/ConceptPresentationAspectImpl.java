@@ -9,6 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_ChooseLongestText;
   private ConceptPresentation props_ConcatenateTexts;
   private ConceptPresentation props_FilterExpression;
   private ConceptPresentation props_MergeSentences;
@@ -29,6 +30,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.ChooseLongestText:
+        if (props_ChooseLongestText == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ChooseLongestText");
+          props_ChooseLongestText = cpb.create();
+        }
+        return props_ChooseLongestText;
       case LanguageConceptSwitch.ConcatenateTexts:
         if (props_ConcatenateTexts == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

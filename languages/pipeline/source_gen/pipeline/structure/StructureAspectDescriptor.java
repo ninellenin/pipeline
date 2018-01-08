@@ -12,6 +12,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptChooseLongestText = createDescriptorForChooseLongestText();
   /*package*/ final ConceptDescriptor myConceptConcatenateTexts = createDescriptorForConcatenateTexts();
   /*package*/ final ConceptDescriptor myConceptFilterExpression = createDescriptorForFilterExpression();
   /*package*/ final ConceptDescriptor myConceptMergeSentences = createDescriptorForMergeSentences();
@@ -34,13 +35,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptConcatenateTexts, myConceptFilterExpression, myConceptMergeSentences, myConceptMergeTokens, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSentenceExpression, myConceptSplitSentence, myConceptSplitText, myConceptTextExpression, myConceptTokenExpression, myConceptUpperCaseToken);
+    return Arrays.asList(myConceptChooseLongestText, myConceptConcatenateTexts, myConceptFilterExpression, myConceptMergeSentences, myConceptMergeTokens, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSentenceExpression, myConceptSplitSentence, myConceptSplitText, myConceptTextExpression, myConceptTokenExpression, myConceptUpperCaseToken);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myConceptIndex.index(id)) {
+      case LanguageConceptSwitch.ChooseLongestText:
+        return myConceptChooseLongestText;
       case LanguageConceptSwitch.ConcatenateTexts:
         return myConceptConcatenateTexts;
       case LanguageConceptSwitch.FilterExpression:
@@ -78,6 +81,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myConceptIndex.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForChooseLongestText() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "ChooseLongestText", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x7f95c2570815fac4L);
+    b.class_(false, false, false);
+    b.super_("pipeline.structure.TextExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x1b5e9c428d392f00L);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/9193467893400337092");
+    b.aggregate("texts", 0x7f95c2570815fae0L).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x1b5e9c428d392f00L).optional(false).ordered(true).multiple(true).origin("9193467893400337120").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForConcatenateTexts() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "ConcatenateTexts", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x263f3a003a63e943L);
     b.class_(false, false, false);
