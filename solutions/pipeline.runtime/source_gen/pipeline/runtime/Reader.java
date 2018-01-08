@@ -26,7 +26,6 @@ public class Reader extends Filter<String, TextItem> {
     queue.add(new TextItem(Item.State.KEY_WORD, TextItem.BEGIN_OF_TEXT));
     try {
       while ((str = input.readLine()) != null) {
-        System.out.println("I put: " + str);
         queue.add(new TextItem(Item.State.STR, str));
       }
       input.close();

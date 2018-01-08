@@ -5,7 +5,7 @@ package pipeline.runtime;
 
 public class SentenceItem extends Item {
   public static final String END_OF_SENTENCE = "<END_OF_SENTENCE>";
-  public static final String BEGIN_OF_TEXT = "<BEGIN_OF_SENTENCE>";
+  public static final String BEGIN_OF_SENTENCE = "<BEGIN_OF_SENTENCE>";
 
   public SentenceItem(Item.State state, String value) {
     super(state, value);

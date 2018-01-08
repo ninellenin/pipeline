@@ -4,6 +4,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
@@ -19,16 +20,16 @@
       <node id="2755985269624883185" at="14,0,15,0" concept="3" trace="value" />
       <node id="2755985269624900485" at="16,47,17,23" concept="2" />
       <node id="2755985269624903425" at="17,23,18,23" concept="2" />
-      <node id="2755985269626576300" at="21,34,22,80" concept="7" />
-      <node id="2755985269624884120" at="25,32,26,17" concept="7" />
+      <node id="2755985269626576300" at="21,34,22,80" concept="8" />
+      <node id="2755985269624884120" at="25,32,26,17" concept="8" />
       <node id="2755985269624884901" at="29,42,30,23" concept="2" />
-      <node id="2755985269624890535" at="33,28,34,17" concept="7" />
+      <node id="2755985269624890535" at="33,28,34,17" concept="8" />
       <node id="2755985269624892327" at="37,38,38,23" concept="2" />
-      <node id="2755985269626567528" at="21,0,24,0" concept="5" trace="isBeginOfText#()Z" />
-      <node id="2755985269624884016" at="25,0,28,0" concept="5" trace="getState#()Lpipeline/runtime/Item/State;" />
-      <node id="2755985269624884620" at="29,0,32,0" concept="5" trace="setState#(Lpipeline/runtime/Item/State;)V" />
-      <node id="2755985269624890306" at="33,0,36,0" concept="5" trace="getValue#()Ljava/lang/String;" />
-      <node id="2755985269624891494" at="37,0,40,0" concept="5" trace="setValue#(Ljava/lang/String;)V" />
+      <node id="2755985269626567528" at="21,0,24,0" concept="6" trace="isBeginOfText#()Z" />
+      <node id="2755985269624884016" at="25,0,28,0" concept="6" trace="getState#()Lpipeline/runtime/Item/State;" />
+      <node id="2755985269624884620" at="29,0,32,0" concept="6" trace="setState#(Lpipeline/runtime/Item/State;)V" />
+      <node id="2755985269624890306" at="33,0,36,0" concept="6" trace="getValue#()Ljava/lang/String;" />
+      <node id="2755985269624891494" at="37,0,40,0" concept="6" trace="setValue#(Ljava/lang/String;)V" />
       <node id="2755985269624899967" at="16,0,20,0" concept="1" trace="Item#(Lpipeline/runtime/Item/State;Ljava/lang/String;)V" />
       <scope id="2755985269626567531" at="21,34,22,80" />
       <scope id="2755985269624884019" at="25,32,26,17" />
@@ -55,9 +56,9 @@
   </root>
   <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/2755985269624938188">
     <file name="TextItem.java">
-      <node id="1972185496486498501" at="7,0,8,0" concept="9" trace="END_OF_TEXT" />
-      <node id="2755985269625210545" at="8,0,9,0" concept="9" trace="BEGIN_OF_TEXT" />
-      <node id="2755985269624938564" at="10,51,11,24" concept="10" />
+      <node id="1972185496486498501" at="7,0,8,0" concept="10" trace="END_OF_TEXT" />
+      <node id="2755985269625210545" at="8,0,9,0" concept="10" trace="BEGIN_OF_TEXT" />
+      <node id="2755985269624938564" at="10,51,11,24" concept="11" />
       <node id="2755985269624938292" at="10,0,13,0" concept="1" trace="TextItem#(Lpipeline/runtime/Item/State;Ljava/lang/String;)V" />
       <scope id="2755985269624938295" at="10,51,11,24" />
       <scope id="2755985269624938292" at="10,0,13,0">
@@ -69,9 +70,9 @@
   </root>
   <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/2755985269624938733">
     <file name="SentenceItem.java">
-      <node id="2755985269627032139" at="7,0,8,0" concept="9" trace="END_OF_SENTENCE" />
-      <node id="2755985269627032143" at="8,0,9,0" concept="9" trace="BEGIN_OF_TEXT" />
-      <node id="2755985269624938968" at="10,55,11,24" concept="10" />
+      <node id="2755985269627032139" at="7,0,8,0" concept="10" trace="END_OF_SENTENCE" />
+      <node id="2755985269627032143" at="8,0,9,0" concept="10" trace="BEGIN_OF_SENTENCE" />
+      <node id="2755985269624938968" at="10,55,11,24" concept="11" />
       <node id="2755985269624938965" at="10,0,13,0" concept="1" trace="SentenceItem#(Lpipeline/runtime/Item/State;Ljava/lang/String;)V" />
       <scope id="2755985269624938967" at="10,55,11,24" />
       <scope id="2755985269624938965" at="10,0,13,0">
@@ -88,56 +89,55 @@
       <node id="3043354323450824639" at="16,9,17,59" concept="2" />
       <node id="1972185496486560569" at="17,59,18,57" concept="2" />
       <node id="1972185496486263626" at="19,39,20,26" concept="2" />
-      <node id="3043354323452632400" at="24,21,25,15" concept="6" />
+      <node id="3043354323452632400" at="24,21,25,15" concept="7" />
       <node id="2755985269625427665" at="25,15,26,73" concept="2" />
-      <node id="2755985269626719436" at="28,48,29,44" concept="2" />
-      <node id="3043354323450916645" at="29,44,30,53" concept="2" />
-      <node id="3043354323452831169" at="31,7,32,20" concept="2" />
-      <node id="1972185496486338957" at="33,29,34,26" concept="2" />
-      <node id="3043354323452837733" at="35,5,36,0" concept="8" />
-      <node id="3043354323451127784" at="36,0,37,71" concept="2" />
-      <node id="2755985269625530909" at="40,29,41,33" concept="6" />
-      <node id="2755985269625567235" at="42,23,43,50" concept="7" />
-      <node id="2755985269625586849" at="44,12,45,18" concept="7" />
-      <node id="2755985269625585120" at="44,10,46,5" concept="0" />
-      <node id="3043354323450882170" at="27,9,31,7" concept="12" />
-      <node id="2755985269625550259" at="41,33,46,5" concept="4" />
-      <node id="1972185496486262670" at="15,34,21,5" concept="11" />
+      <node id="3043354323450916645" at="28,48,29,53" concept="2" />
+      <node id="3043354323452831169" at="30,7,31,20" concept="2" />
+      <node id="1972185496486338957" at="32,29,33,26" concept="2" />
+      <node id="3043354323452837733" at="34,5,35,0" concept="9" />
+      <node id="3043354323451127784" at="35,0,36,71" concept="2" />
+      <node id="2755985269625530909" at="39,29,40,33" concept="7" />
+      <node id="2755985269625567235" at="41,23,42,50" concept="8" />
+      <node id="2755985269625586849" at="43,12,44,18" concept="8" />
+      <node id="2755985269625585120" at="43,10,45,5" concept="0" />
+      <node id="3043354323450882170" at="27,9,30,7" concept="13" />
+      <node id="2755985269625550259" at="40,33,45,5" concept="5" />
+      <node id="1972185496486262670" at="15,34,21,5" concept="12" />
       <node id="1972185496486224103" at="15,0,23,0" concept="1" trace="Reader#(Ljava/lang/String;)V" />
-      <node id="1972185496486344539" at="26,73,35,5" concept="11" />
-      <node id="2755985269625424719" at="39,0,48,0" concept="5" trace="getItem#()Lpipeline/runtime/TextItem;" />
-      <node id="1972185496486267441" at="24,0,39,0" concept="5" trace="run#()V" />
+      <node id="1972185496486344539" at="26,73,34,5" concept="12" />
+      <node id="2755985269625424719" at="38,0,47,0" concept="6" trace="getItem#()Lpipeline/runtime/TextItem;" />
+      <node id="1972185496486267441" at="24,0,38,0" concept="6" trace="run#()V" />
       <scope id="1972185496486262666" at="19,0,20,26">
         <var name="e" id="1972185496486262668" />
       </scope>
       <scope id="1972185496486262667" at="19,39,20,26" />
-      <scope id="1972185496486325677" at="33,0,34,26">
+      <scope id="3043354323450882172" at="28,48,29,53" />
+      <scope id="1972185496486325677" at="32,0,33,26">
         <var name="e" id="1972185496486325679" />
       </scope>
-      <scope id="1972185496486325678" at="33,29,34,26" />
-      <scope id="2755985269625550261" at="42,23,43,50" />
-      <scope id="2755985269625585121" at="44,12,45,18" />
+      <scope id="1972185496486325678" at="32,29,33,26" />
+      <scope id="2755985269625550261" at="41,23,42,50" />
+      <scope id="2755985269625585121" at="43,12,44,18" />
       <scope id="1972185496486262671" at="16,9,18,57" />
-      <scope id="3043354323450882172" at="28,48,30,53" />
-      <scope id="1972185496486325682" at="27,9,32,20" />
+      <scope id="1972185496486325682" at="27,9,31,20" />
       <scope id="1972185496486224106" at="15,34,21,5" />
-      <scope id="2755985269625424724" at="40,29,46,5">
+      <scope id="2755985269625424724" at="39,29,45,5">
         <var name="item" id="2755985269625530910" />
       </scope>
       <scope id="1972185496486224103" at="15,0,23,0">
         <var name="filename" id="1972185496486248260" />
       </scope>
-      <scope id="2755985269625424719" at="39,0,48,0" />
-      <scope id="1972185496486267444" at="24,21,37,71">
+      <scope id="2755985269625424719" at="38,0,47,0" />
+      <scope id="1972185496486267444" at="24,21,36,71">
         <var name="str" id="3043354323452632401" />
       </scope>
-      <scope id="1972185496486267441" at="24,0,39,0" />
-      <unit id="2755985269625610114" at="11,0,49,0" name="pipeline.runtime.Reader" />
+      <scope id="1972185496486267441" at="24,0,38,0" />
+      <unit id="2755985269625610114" at="11,0,48,0" name="pipeline.runtime.Reader" />
     </file>
   </root>
   <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/2755985269625934281">
     <file name="Filter.java">
-      <node id="2755985269625934555" at="7,0,8,0" concept="5" trace="getItem#()null" />
+      <node id="2755985269625934555" at="7,0,8,0" concept="6" trace="getItem#()null" />
       <scope id="2755985269625934555" at="7,0,8,0" />
       <unit id="2755985269625934281" at="6,0,9,0" name="pipeline.runtime.Filter" />
     </file>
@@ -145,10 +145,10 @@
   <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/3043354323453089256">
     <file name="SplitSentence.java">
       <node id="3043354323453090578" at="7,26,8,48" concept="2" />
-      <node id="2755985269625974295" at="15,25,16,16" concept="7" />
+      <node id="2755985269625974295" at="15,25,16,16" concept="8" />
       <node id="3043354323453090147" at="7,0,10,0" concept="1" trace="SplitSentence#()V" />
-      <node id="3043354323453089444" at="10,0,13,0" concept="5" trace="run#()V" />
-      <node id="2755985269625973821" at="14,0,18,0" concept="5" trace="getItem#()Lpipeline/runtime/Item;" />
+      <node id="3043354323453089444" at="10,0,13,0" concept="6" trace="run#()V" />
+      <node id="2755985269625973821" at="14,0,18,0" concept="6" trace="getItem#()Lpipeline/runtime/Item;" />
       <scope id="3043354323453089448" at="11,21,11,21" />
       <scope id="3043354323453090150" at="7,26,8,48" />
       <scope id="2755985269625973826" at="15,25,16,16" />
@@ -162,50 +162,68 @@
     <file name="SplitText.java">
       <node id="1972185496486531857" at="8,0,9,0" concept="3" trace="input" />
       <node id="1972185496486397282" at="9,0,10,0" concept="3" trace="output" />
-      <node id="1972185496486533654" at="11,47,12,23" concept="2" />
-      <node id="1972185496486397866" at="12,23,13,55" concept="2" />
-      <node id="2755985269626133618" at="16,21,17,18" concept="2" />
-      <node id="1972185496486479416" at="17,18,18,36" concept="2" />
-      <node id="1972185496486479423" at="18,36,19,36" concept="6" />
-      <node id="1972185496486479429" at="19,36,20,34" concept="2" />
-      <node id="1972185496486479436" at="20,34,21,0" concept="8" />
-      <node id="1972185496486479439" at="22,105,23,45" concept="2" />
-      <node id="1972185496486479444" at="23,45,24,0" concept="8" />
-      <node id="1972185496486479447" at="25,48,26,43" concept="2" />
-      <node id="1972185496486479452" at="26,43,27,0" concept="8" />
-      <node id="2755985269625087983" at="27,0,28,85" concept="6" />
-      <node id="1972185496486479453" at="28,85,29,31" concept="2" />
-      <node id="1972185496486479461" at="30,7,31,29" concept="2" />
-      <node id="2755985269625161745" at="32,5,33,76" concept="2" />
-      <node id="2755985269625368764" at="37,33,38,38" concept="6" />
-      <node id="2755985269625322397" at="39,23,40,54" concept="7" />
-      <node id="2755985269625348843" at="41,12,42,18" concept="7" />
-      <node id="2755985269625347131" at="41,10,43,5" concept="0" />
-      <node id="3043354323453376235" at="11,0,15,0" concept="1" trace="SplitText#(Lpipeline/runtime/Filter;)V" />
-      <node id="2755985269625312464" at="38,38,43,5" concept="4" />
-      <node id="1972185496486479445" at="24,0,30,7" concept="4" />
-      <node id="2755985269624922373" at="36,0,45,0" concept="5" trace="getItem#()Lpipeline/runtime/SentenceItem;" />
-      <node id="1972185496486479437" at="21,0,32,5" concept="12" />
-      <node id="3043354323453341561" at="15,0,35,0" concept="5" trace="run#()V" />
-      <scope id="2755985269625312466" at="39,23,40,54" />
-      <scope id="2755985269625347132" at="41,12,42,18" />
-      <scope id="3043354323453376238" at="11,47,13,55" />
-      <scope id="3043354323453376235" at="11,0,15,0">
+      <node id="7443179836098262535" at="10,0,11,0" concept="10" trace="SPLIT_REGEX" />
+      <node id="7443179836096815594" at="11,0,12,0" concept="10" trace="SPLIT_SYMBOLS" />
+      <node id="1972185496486533654" at="13,47,14,23" concept="2" />
+      <node id="1972185496486397866" at="14,23,15,55" concept="2" />
+      <node id="2755985269626133618" at="18,21,19,18" concept="2" />
+      <node id="1972185496486479423" at="19,18,20,36" concept="7" />
+      <node id="7443179836097807013" at="20,36,21,25" concept="7" />
+      <node id="7443179836097803897" at="21,25,22,0" concept="9" />
+      <node id="7443179836096734785" at="24,33,25,71" concept="2" />
+      <node id="7443179836096535351" at="26,55,27,37" concept="7" />
+      <node id="7443179836097822480" at="27,37,28,49" concept="7" />
+      <node id="7443179836096557848" at="30,22,31,94" concept="2" />
+      <node id="7443179836096588014" at="33,100,34,74" concept="2" />
+      <node id="7443179836097896827" at="34,74,35,26" concept="2" />
+      <node id="7443179836098387632" at="36,18,37,68" concept="2" />
+      <node id="7443179836097996649" at="37,68,38,92" concept="2" />
+      <node id="7443179836097895895" at="38,92,39,25" concept="2" />
+      <node id="1972185496486479461" at="42,7,43,29" concept="2" />
+      <node id="2755985269625161745" at="44,5,45,76" concept="2" />
+      <node id="2755985269625368764" at="49,33,50,38" concept="7" />
+      <node id="2755985269625322397" at="51,23,52,54" concept="8" />
+      <node id="2755985269625348843" at="53,12,54,18" concept="8" />
+      <node id="2755985269625347131" at="53,10,55,5" concept="0" />
+      <node id="7443179836097658634" at="29,50,32,11" concept="5" />
+      <node id="3043354323453376235" at="13,0,17,0" concept="1" trace="SplitText#(Lpipeline/runtime/Filter;)V" />
+      <node id="7443179836097891018" at="36,16,40,11" concept="0" />
+      <node id="2755985269625312464" at="50,38,55,5" concept="5" />
+      <node id="7443179836097885949" at="32,11,40,11" concept="5" />
+      <node id="2755985269624922373" at="48,0,57,0" concept="6" trace="getItem#()Lpipeline/runtime/SentenceItem;" />
+      <node id="7443179836097815673" at="28,49,41,9" concept="4" />
+      <node id="7443179836096731093" at="23,105,42,7" concept="5" />
+      <node id="1972185496486479437" at="22,0,44,5" concept="13" />
+      <node id="3043354323453341561" at="17,0,47,0" concept="6" trace="run#()V" />
+      <scope id="7443179836096731095" at="24,33,25,71" />
+      <scope id="7443179836097658636" at="30,22,31,94" />
+      <scope id="2755985269625312466" at="51,23,52,54" />
+      <scope id="2755985269625347132" at="53,12,54,18" />
+      <scope id="3043354323453376238" at="13,47,15,55" />
+      <scope id="7443179836097885951" at="33,100,35,26" />
+      <scope id="7443179836097891019" at="36,18,39,25" />
+      <scope id="3043354323453376235" at="13,0,17,0">
         <var name="input" id="2755985269624915220" />
       </scope>
-      <scope id="1972185496486479446" at="25,48,29,31">
-        <var name="itemOutput" id="2755985269625087986" />
-      </scope>
-      <scope id="2755985269624922377" at="37,33,43,5">
+      <scope id="2755985269624922377" at="49,33,55,5">
         <var name="item" id="2755985269625368765" />
       </scope>
-      <scope id="1972185496486479438" at="22,105,31,29" />
-      <scope id="2755985269624922373" at="36,0,45,0" />
-      <scope id="3043354323453341565" at="16,21,33,76">
+      <scope id="2755985269624922373" at="48,0,57,0" />
+      <scope id="7443179836097815675" at="29,50,40,11" />
+      <scope id="7443179836097815673" at="28,49,41,9">
+        <var name="i" id="7443179836097815676" />
+      </scope>
+      <scope id="7443179836096760208" at="26,55,41,9">
+        <var name="splits" id="7443179836097822481" />
+        <var name="str" id="7443179836096535352" />
+      </scope>
+      <scope id="1972185496486479438" at="23,105,43,29" />
+      <scope id="3043354323453341565" at="18,21,45,76">
+        <var name="begin" id="7443179836097807016" />
         <var name="item" id="1972185496486479424" />
       </scope>
-      <scope id="3043354323453341561" at="15,0,35,0" />
-      <unit id="3043354323453341314" at="7,0,46,0" name="pipeline.runtime.SplitText" />
+      <scope id="3043354323453341561" at="17,0,47,0" />
+      <unit id="3043354323453341314" at="7,0,58,0" name="pipeline.runtime.SplitText" />
     </file>
   </root>
 </debug-info>

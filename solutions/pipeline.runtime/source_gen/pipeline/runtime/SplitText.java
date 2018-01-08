@@ -7,6 +7,8 @@ import java.util.concurrent.ConcurrentLinkedQueue;
 public class SplitText extends Filter<TextItem, SentenceItem> {
   private Filter<?, TextItem> input;
   private ConcurrentLinkedQueue<SentenceItem> output;
+  private static final String SPLIT_REGEX = "[\\.!?]";
+  private static final String SPLIT_SYMBOLS = ".!?";
 
   public SplitText(Filter<?, TextItem> input) {
     this.input = input;
@@ -15,18 +17,28 @@ public class SplitText extends Filter<TextItem, SentenceItem> {
   @Override
   public void run() {
     input.start();
-    System.out.println("RUUUUN!!!");
     TextItem item = input.getItem();
-    System.out.println("POOOOOL");
+    boolean begin = true;
 
     while (!((item.getState() == Item.State.KEY_WORD && item.getValue().equals(TextItem.END_OF_TEXT)))) {
-      System.out.println("I am in cycle!!!");
-
-      if (item.getState() != Item.State.EMPTY) {
-        System.out.println("Try print!!!");
-
-        SentenceItem itemOutput = new SentenceItem(item.getState(), item.getValue());
-        output.add(itemOutput);
+      if (item.isBeginOfText()) {
+        output.add(new SentenceItem(item.getState(), item.getValue()));
+      } else if (item.getState() != Item.State.EMPTY) {
+        String str = item.getValue();
+        String[] splits = str.split(SPLIT_REGEX);
+        for (int i = 0; i != splits.length; ++i) {
+          if (begin) {
+            output.add(new SentenceItem(Item.State.KEY_WORD, SentenceItem.BEGIN_OF_SENTENCE));
+          }
+          if (i + 1 == splits.length && SPLIT_SYMBOLS.indexOf(str.charAt(str.length() - 1)) == -1) {
+            output.add(new SentenceItem(Item.State.STR, splits[i] + ' '));
+            begin = false;
+          } else {
+            output.add(new SentenceItem(Item.State.STR, splits[i]));
+            output.add(new SentenceItem(Item.State.KEY_WORD, SentenceItem.END_OF_SENTENCE));
+            begin = true;
+          }
+        }
       }
       item = input.getItem();
     }
