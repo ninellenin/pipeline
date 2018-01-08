@@ -24,6 +24,9 @@ public class QueriesGenerated {
   public static SNode sourceNodeQuery_2755985269625989766(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x5433b88ac5b47dabL, 0x2321802eb8668c3eL, "text"));
   }
+  public static SNode sourceNodeQuery_2755985269627893240(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1fee9ce93L, 0x2321802eb8668a98L, "sentences"));
+  }
   public static SNode sourceNodeQuery_2755985269625909731(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x5433b88ac5b47d87L, 0x2321802eb8668a8cL, "from"));
   }
