@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/pipeline/pipeline.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/pipeline/sandbox/pipeline.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/pipeline.runtime/pipeline.runtime.msd" folder="" />
     </projectModules>
   </component>
 </project>

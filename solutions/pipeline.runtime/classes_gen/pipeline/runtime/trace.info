@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/3043354323453088283">
+    <file name="IFilter.java">
+      <node id="1972185496486777872" at="9,0,10,0" concept="4" trace="getQueueList#()Ljava/util/List;" />
+      <node id="894693271985398567" at="10,0,11,0" concept="4" trace="getFirstOutput#()Ljava/util/concurrent/ConcurrentLinkedQueue;" />
+      <scope id="1972185496486777872" at="9,0,10,0" />
+      <scope id="894693271985398567" at="10,0,11,0" />
+      <unit id="3043354323453088283" at="8,0,12,0" name="pipeline.runtime.IFilter" />
+    </file>
+  </root>
+  <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/3043354323453089256">
+    <file name="SplitSentence.java">
+      <node id="3043354323453090578" at="9,26,10,48" concept="1" />
+      <node id="894693271985322287" at="17,53,18,16" concept="6" />
+      <node id="894693271985467999" at="22,49,23,16" concept="6" />
+      <node id="3043354323453090147" at="9,0,12,0" concept="0" trace="SplitSentence#()V" />
+      <node id="3043354323453089444" at="12,0,15,0" concept="4" trace="run#()V" />
+      <node id="894693271985322017" at="16,0,20,0" concept="4" trace="getQueueList#()Ljava/util/List;" />
+      <node id="894693271985467626" at="21,0,25,0" concept="4" trace="getFirstOutput#()Ljava/util/concurrent/ConcurrentLinkedQueue;" />
+      <scope id="3043354323453089448" at="13,21,13,21" />
+      <scope id="3043354323453090150" at="9,26,10,48" />
+      <scope id="894693271985322022" at="17,53,18,16" />
+      <scope id="894693271985467630" at="22,49,23,16" />
+      <scope id="3043354323453090147" at="9,0,12,0" />
+      <scope id="3043354323453089444" at="12,0,15,0" />
+      <scope id="894693271985322017" at="16,0,20,0" />
+      <scope id="894693271985467626" at="21,0,25,0" />
+      <unit id="3043354323453089256" at="8,0,26,0" name="pipeline.runtime.SplitSentence" />
+    </file>
+  </root>
+  <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/3043354323453341314">
+    <file name="SplitText.java">
+      <node id="1972185496486531857" at="11,0,12,0" concept="2" trace="input" />
+      <node id="1972185496486397282" at="12,0,13,0" concept="2" trace="output" />
+      <node id="894693271985405052" at="13,0,14,0" concept="2" trace="listQueue" />
+      <node id="1972185496486498501" at="14,0,15,0" concept="8" trace="END_OF_TEXT" />
+      <node id="1972185496486533654" at="17,57,18,23" concept="1" />
+      <node id="894693271985407843" at="18,23,19,79" concept="1" />
+      <node id="1972185496486397866" at="19,79,20,41" concept="1" />
+      <node id="894693271985432620" at="20,41,21,56" concept="1" />
+      <node id="1972185496486479416" at="24,21,25,36" concept="1" />
+      <node id="1972185496486479423" at="25,36,26,30" concept="5" />
+      <node id="1972185496486479429" at="26,30,27,34" concept="1" />
+      <node id="1972185496486479436" at="27,34,28,0" concept="7" />
+      <node id="1972185496486479439" at="29,40,30,45" concept="1" />
+      <node id="1972185496486479444" at="30,45,31,0" concept="7" />
+      <node id="1972185496486479447" at="32,24,33,43" concept="1" />
+      <node id="1972185496486479452" at="33,43,34,0" concept="7" />
+      <node id="1972185496486479453" at="34,0,35,24" concept="1" />
+      <node id="1972185496486479461" at="36,7,37,25" concept="1" />
+      <node id="894693271985325133" at="42,53,43,21" concept="6" />
+      <node id="894693271985449546" at="47,49,48,18" concept="6" />
+      <node id="894693271985323786" at="41,0,45,0" concept="4" trace="getQueueList#()Ljava/util/List;" />
+      <node id="894693271985446453" at="46,0,50,0" concept="4" trace="getFirstOutput#()Ljava/util/concurrent/ConcurrentLinkedQueue;" />
+      <node id="1972185496486479445" at="31,0,36,7" concept="3" />
+      <node id="3043354323453376235" at="17,0,23,0" concept="0" trace="SplitText#(Ljava/util/concurrent/ConcurrentLinkedQueue;)V" />
+      <node id="1972185496486479437" at="28,0,38,5" concept="9" />
+      <node id="3043354323453341561" at="23,0,40,0" concept="4" trace="run#()V" />
+      <scope id="894693271985323791" at="42,53,43,21" />
+      <scope id="894693271985446457" at="47,49,48,18" />
+      <scope id="1972185496486479446" at="32,24,35,24" />
+      <scope id="3043354323453376238" at="17,57,21,56" />
+      <scope id="894693271985323786" at="41,0,45,0" />
+      <scope id="894693271985446453" at="46,0,50,0" />
+      <scope id="3043354323453376235" at="17,0,23,0">
+        <var name="input" id="1972185496486396191" />
+      </scope>
+      <scope id="1972185496486479438" at="29,40,37,25" />
+      <scope id="3043354323453341565" at="24,21,38,5">
+        <var name="str" id="1972185496486479424" />
+      </scope>
+      <scope id="3043354323453341561" at="23,0,40,0" />
+      <unit id="3043354323453341314" at="10,0,51,0" name="pipeline.runtime.SplitText" />
+    </file>
+  </root>
+</debug-info>
+

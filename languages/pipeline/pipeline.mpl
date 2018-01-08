@@ -14,6 +14,9 @@
         </modelRoot>
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">015442e1-58cc-44e5-9466-d1138dfd2089(pipeline.runtime)</dependency>
+      </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="5" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -47,6 +50,7 @@
         <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="7655a5e7-076c-42d6-b885-3f94b3d29c6b(pipeline)" version="0" />
         <module reference="3bcf1160-731f-4529-b8b4-9d72948ca999(pipeline#6067396029160127783)" version="0" />
+        <module reference="015442e1-58cc-44e5-9466-d1138dfd2089(pipeline.runtime)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
