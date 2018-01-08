@@ -4,11 +4,11 @@ package pipeline.runtime;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-public class MergeText extends Filter<SentenceItem, TextItem> {
+public class MergeSentences extends Filter<SentenceItem, TextItem> {
   private Filter<?, SentenceItem> input;
   private ConcurrentLinkedQueue<TextItem> output;
 
-  public MergeText(Filter<?, SentenceItem> input) {
+  public MergeSentences(Filter<?, SentenceItem> input) {
     this.input = input;
     output = new ConcurrentLinkedQueue<TextItem>();
   }

@@ -8,7 +8,7 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="pipeline.runtime.TextItem" />
   </dependency>
-  <dependency className="pipeline.runtime.MergeText" file="MergeText.java">
+  <dependency className="pipeline.runtime.MergeSentences" file="MergeSentences.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.StringBuilder" />
     <classNode dependClassName="java.lang.System" />
@@ -16,6 +16,17 @@
     <classNode dependClassName="pipeline.runtime.Item" />
     <classNode dependClassName="pipeline.runtime.SentenceItem" />
     <classNode dependClassName="pipeline.runtime.TextItem" />
+    <classNode extendsClassName="pipeline.runtime.Filter" />
+  </dependency>
+  <dependency className="pipeline.runtime.MergeTokens" file="MergeTokens.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.StringBuilder" />
+    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="java.util.concurrent.ConcurrentLinkedQueue" />
+    <classNode dependClassName="pipeline.runtime.Item" />
+    <classNode dependClassName="pipeline.runtime.SentenceItem" />
+    <classNode dependClassName="pipeline.runtime.TextItem" />
+    <classNode dependClassName="pipeline.runtime.TokenItem" />
     <classNode extendsClassName="pipeline.runtime.Filter" />
   </dependency>
   <dependency className="pipeline.runtime.Reader" file="Reader.java">

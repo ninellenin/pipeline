@@ -161,5 +161,29 @@
     <property role="TrG5h" value="TokenExpression" />
     <ref role="1TJDcQ" node="LE_GDzAeg4" resolve="FilterExpression" />
   </node>
+  <node concept="1TIwiD" id="6tbva0i1rye">
+    <property role="EcuMT" value="7443179836098853006" />
+    <property role="TrG5h" value="MergeSentences" />
+    <ref role="1TJDcQ" node="1HuB4adeiW0" resolve="TextExpression" />
+    <node concept="1TJgyj" id="6tbva0i1rz5" role="1TKVEi">
+      <property role="IQ2ns" value="7443179836098853061" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sentences" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="LE_GDzCBeM" resolve="SentenceExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tbva0i4zgL">
+    <property role="EcuMT" value="7443179836099671089" />
+    <property role="TrG5h" value="MergeTokens" />
+    <ref role="1TJDcQ" node="LE_GDzCBeM" resolve="SentenceExpression" />
+    <node concept="1TJgyj" id="6tbva0i4ziB" role="1TKVEi">
+      <property role="IQ2ns" value="7443179836099671207" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tokens" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2cxw2USpVik" resolve="TokenExpression" />
+    </node>
+  </node>
 </model>
 

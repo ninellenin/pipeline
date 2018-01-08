@@ -323,10 +323,10 @@
     </file>
   </root>
   <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/7443179836098852908">
-    <file name="MergeText.java">
+    <file name="MergeSentences.java">
       <node id="7443179836098876449" at="8,0,9,0" concept="3" trace="input" />
       <node id="7443179836098876454" at="9,0,10,0" concept="3" trace="output" />
-      <node id="7443179836098876470" at="11,51,12,23" concept="2" />
+      <node id="7443179836098876470" at="11,56,12,23" concept="2" />
       <node id="7443179836098876476" at="12,23,13,51" concept="2" />
       <node id="7443179836099615343" at="17,21,18,18" concept="2" />
       <node id="7443179836098892092" at="18,18,19,40" concept="7" />
@@ -345,7 +345,7 @@
       <node id="7443179836098868508" at="45,10,47,5" concept="0" />
       <node id="7443179836099055384" at="25,55,28,9" concept="5" />
       <node id="7443179836099075291" at="28,9,31,9" concept="5" />
-      <node id="7443179836098876467" at="11,0,15,0" concept="1" trace="MergeText#(Lpipeline/runtime/Filter;)V" />
+      <node id="7443179836098876467" at="11,0,15,0" concept="1" trace="MergeSentences#(Lpipeline/runtime/Filter;)V" />
       <node id="7443179836098868498" at="42,34,47,5" concept="5" />
       <node id="7443179836098865120" at="40,0,49,0" concept="6" trace="getItem#()Lpipeline/runtime/TextItem;" />
       <node id="7443179836098988735" at="22,105,32,7" concept="5" />
@@ -356,7 +356,7 @@
       <scope id="7443179836099075293" at="29,104,30,31" />
       <scope id="7443179836098868502" at="43,23,44,50" />
       <scope id="7443179836098868509" at="45,12,46,18" />
-      <scope id="7443179836098876469" at="11,51,13,51" />
+      <scope id="7443179836098876469" at="11,56,13,51" />
       <scope id="7443179836098876467" at="11,0,15,0">
         <var name="input" id="7443179836098876483" />
       </scope>
@@ -371,7 +371,62 @@
         <var name="item" id="7443179836098892093" />
       </scope>
       <scope id="7443179836098864434" at="16,0,39,0" />
-      <unit id="7443179836098852908" at="7,0,50,0" name="pipeline.runtime.MergeText" />
+      <unit id="7443179836098852908" at="7,0,50,0" name="pipeline.runtime.MergeSentences" />
+    </file>
+  </root>
+  <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/7443179836099673343">
+    <file name="MergeTokens.java">
+      <node id="7443179836099677378" at="8,0,9,0" concept="3" trace="input" />
+      <node id="7443179836099677383" at="9,0,10,0" concept="3" trace="output" />
+      <node id="7443179836099677391" at="11,50,12,23" concept="2" />
+      <node id="7443179836099677397" at="12,23,13,55" concept="2" />
+      <node id="7443179836099693231" at="17,21,18,18" concept="2" />
+      <node id="7443179836099693235" at="18,18,19,37" concept="7" />
+      <node id="7443179836099693241" at="19,37,20,48" concept="7" />
+      <node id="7443179836099693246" at="20,48,21,0" concept="9" />
+      <node id="7443179836099693270" at="23,33,24,71" concept="2" />
+      <node id="7443179836099693296" at="26,48,27,48" concept="2" />
+      <node id="7443179836099693370" at="28,116,29,75" concept="2" />
+      <node id="7443179836099857610" at="29,75,30,90" concept="2" />
+      <node id="7443179836099853395" at="30,90,31,40" concept="2" />
+      <node id="7443179836099890089" at="32,16,33,73" concept="2" />
+      <node id="7443179836099693321" at="35,7,36,29" concept="2" />
+      <node id="7443179836099693359" at="37,5,38,46" concept="2" />
+      <node id="7443179836099693380" at="38,46,39,76" concept="2" />
+      <node id="7443179836099684503" at="42,33,43,38" concept="7" />
+      <node id="7443179836099684514" at="44,23,45,54" concept="8" />
+      <node id="7443179836099684521" at="46,12,47,18" concept="8" />
+      <node id="7443179836099888734" at="32,14,34,9" concept="0" />
+      <node id="7443179836099684519" at="46,10,48,5" concept="0" />
+      <node id="7443179836099677388" at="11,0,15,0" concept="1" trace="MergeTokens#(Lpipeline/runtime/Filter;)V" />
+      <node id="7443179836099684509" at="43,38,48,5" concept="5" />
+      <node id="7443179836099693289" at="25,55,34,9" concept="5" />
+      <node id="7443179836099673603" at="41,0,50,0" concept="6" trace="getItem#()Lpipeline/runtime/SentenceItem;" />
+      <node id="7443179836099693265" at="22,105,35,7" concept="5" />
+      <node id="7443179836099693247" at="21,0,37,5" concept="13" />
+      <node id="7443179836099674006" at="16,0,41,0" concept="6" trace="run#()V" />
+      <scope id="7443179836099693269" at="23,33,24,71" />
+      <scope id="7443179836099693295" at="26,48,27,48" />
+      <scope id="7443179836099888735" at="32,16,33,73" />
+      <scope id="7443179836099684513" at="44,23,45,54" />
+      <scope id="7443179836099684520" at="46,12,47,18" />
+      <scope id="7443179836099677390" at="11,50,13,55" />
+      <scope id="7443179836099805571" at="28,116,31,40" />
+      <scope id="7443179836099677388" at="11,0,15,0">
+        <var name="input" id="7443179836099677404" />
+      </scope>
+      <scope id="7443179836099673608" at="42,33,48,5">
+        <var name="item" id="7443179836099684504" />
+      </scope>
+      <scope id="7443179836099693288" at="25,55,34,9" />
+      <scope id="7443179836099673603" at="41,0,50,0" />
+      <scope id="7443179836099693248" at="22,105,36,29" />
+      <scope id="7443179836099674011" at="17,21,39,76">
+        <var name="builder" id="7443179836099693242" />
+        <var name="item" id="7443179836099693236" />
+      </scope>
+      <scope id="7443179836099674006" at="16,0,41,0" />
+      <unit id="7443179836099673343" at="7,0,51,0" name="pipeline.runtime.MergeTokens" />
     </file>
   </root>
 </debug-info>

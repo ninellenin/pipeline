@@ -202,5 +202,89 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6tbva0i1rz8">
+    <ref role="1XX52x" to="k4u8:6tbva0i1rye" resolve="MergeSentences" />
+    <node concept="3EZMnI" id="6tbva0i1r$0" role="2wV5jI">
+      <node concept="l2Vlx" id="6tbva0i1r$1" role="2iSdaV" />
+      <node concept="3F0ifn" id="6tbva0i1r$2" role="3EZMnx">
+        <property role="3F0ifm" value="mergeSentences" />
+      </node>
+      <node concept="3F0ifn" id="6tbva0i1r$3" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="3mYdg7" id="6tbva0i1r$4" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+        <node concept="ljvvj" id="6tbva0i1r$5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6tbva0i1r$6" role="3EZMnx">
+        <node concept="l2Vlx" id="6tbva0i1r$7" role="2iSdaV" />
+        <node concept="lj46D" id="6tbva0i1r$8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F1sOY" id="6tbva0i1r$d" role="3EZMnx">
+          <ref role="1NtTu8" to="k4u8:6tbva0i1rz5" resolve="sentences" />
+          <node concept="lj46D" id="6tbva0i1r$e" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="6tbva0i1r$f" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="pj6Ft" id="6tbva0i1rAL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6tbva0i1r$p" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="3mYdg7" id="6tbva0i1r$q" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6tbva0i4ziE">
+    <ref role="1XX52x" to="k4u8:6tbva0i4zgL" resolve="MergeTokens" />
+    <node concept="3EZMnI" id="6tbva0i4zjy" role="2wV5jI">
+      <node concept="l2Vlx" id="6tbva0i4zjz" role="2iSdaV" />
+      <node concept="3F0ifn" id="6tbva0i4zj$" role="3EZMnx">
+        <property role="3F0ifm" value="mergeTokens" />
+      </node>
+      <node concept="3F0ifn" id="6tbva0i4zj_" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="3mYdg7" id="6tbva0i4zjA" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+        <node concept="ljvvj" id="6tbva0i4zjB" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6tbva0i4zjC" role="3EZMnx">
+        <node concept="l2Vlx" id="6tbva0i4zjD" role="2iSdaV" />
+        <node concept="lj46D" id="6tbva0i4zjE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F1sOY" id="6tbva0i4zjJ" role="3EZMnx">
+          <ref role="1NtTu8" to="k4u8:6tbva0i4ziB" resolve="tokens" />
+          <node concept="lj46D" id="6tbva0i4zjK" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="6tbva0i4zjL" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="pj6Ft" id="6tbva0i4zmj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6tbva0i4zjV" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="3mYdg7" id="6tbva0i4zjW" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

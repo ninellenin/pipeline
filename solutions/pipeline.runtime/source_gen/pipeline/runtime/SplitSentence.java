@@ -7,7 +7,7 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
-public class SplitSentence extends Filter<SentenceItem, Item> {
+public class SplitSentence extends Filter<SentenceItem, TokenItem> {
   private Filter<?, SentenceItem> input;
   private ConcurrentLinkedQueue<TokenItem> output;
 
