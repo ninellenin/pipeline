@@ -9,7 +9,10 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_ConcatenateTexts;
   private ConceptPresentation props_FilterExpression;
+  private ConceptPresentation props_MergeSentences;
+  private ConceptPresentation props_MergeTokens;
   private ConceptPresentation props_MyExpression;
   private ConceptPresentation props_Output;
   private ConceptPresentation props_Path;
@@ -25,6 +28,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.ConcatenateTexts:
+        if (props_ConcatenateTexts == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ConcatenateTexts");
+          props_ConcatenateTexts = cpb.create();
+        }
+        return props_ConcatenateTexts;
       case LanguageConceptSwitch.FilterExpression:
         if (props_FilterExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -32,6 +42,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FilterExpression = cpb.create();
         }
         return props_FilterExpression;
+      case LanguageConceptSwitch.MergeSentences:
+        if (props_MergeSentences == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("MergeSentences");
+          props_MergeSentences = cpb.create();
+        }
+        return props_MergeSentences;
+      case LanguageConceptSwitch.MergeTokens:
+        if (props_MergeTokens == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("MergeTokens");
+          props_MergeTokens = cpb.create();
+        }
+        return props_MergeTokens;
       case LanguageConceptSwitch.MyExpression:
         if (props_MyExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

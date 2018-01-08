@@ -187,7 +187,11 @@
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+        <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -195,6 +199,9 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -276,11 +283,11 @@
       </node>
     </node>
     <node concept="3aamgX" id="6tbva0i2YGY" role="3acgRq">
-      <ref role="30HIoZ" to="k4u8:6tbva0i1rye" resolve="MergeText" />
+      <ref role="30HIoZ" to="k4u8:6tbva0i1rye" resolve="MergeSentences" />
       <node concept="gft3U" id="6tbva0i2YIi" role="1lVwrX">
         <node concept="2ShNRf" id="6tbva0i2YIq" role="gfFT$">
           <node concept="1pGfFk" id="6tbva0i2YTs" role="2ShVmc">
-            <ref role="37wK5l" to="nejq:6tbva0i1xgN" resolve="MergeText" />
+            <ref role="37wK5l" to="nejq:6tbva0i1xgN" resolve="MergeSentences" />
             <node concept="10Nm6u" id="6tbva0i2YTD" role="37wK5m">
               <node concept="29HgVG" id="6tbva0i2YU2" role="lGtFl">
                 <node concept="3NFfHV" id="6tbva0i2YU3" role="3NFExx">
@@ -323,6 +330,34 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="2oZew0Uqx2c" role="3acgRq">
+      <ref role="30HIoZ" to="k4u8:2oZew0UoY_3" resolve="ConcatenateTexts" />
+      <node concept="gft3U" id="7YlK_s80K4g" role="1lVwrX">
+        <node concept="2ShNRf" id="7YlK_s80K4q" role="gfFT$">
+          <node concept="1pGfFk" id="7YlK_s80Kfx" role="2ShVmc">
+            <ref role="37wK5l" to="nejq:2oZew0UpDfa" resolve="ConcatenateTexts" />
+            <node concept="10Nm6u" id="7YlK_s80KfK" role="37wK5m">
+              <node concept="1WS0z7" id="7YlK_s81fSB" role="lGtFl">
+                <node concept="3JmXsc" id="7YlK_s81fSE" role="3Jn$fo">
+                  <node concept="3clFbS" id="7YlK_s81fSF" role="2VODD2">
+                    <node concept="3clFbF" id="7YlK_s81fSL" role="3cqZAp">
+                      <node concept="2OqwBi" id="7YlK_s81fSG" role="3clFbG">
+                        <node concept="3Tsc0h" id="7YlK_s81fSJ" role="2OqNvi">
+                          <ref role="3TtcxE" to="k4u8:2oZew0UoY_v" resolve="texts" />
+                        </node>
+                        <node concept="30H73N" id="7YlK_s81fSK" role="2Oq$k0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="29HgVG" id="7YlK_s81rQ_" role="lGtFl" />
+            </node>
+            <node concept="10Nm6u" id="7YlK_s82fg0" role="37wK5m" />
           </node>
         </node>
       </node>

@@ -21,47 +21,33 @@
         <child id="2531445403709508236" name="from" index="2rhKEy" />
         <child id="2531445403709508243" name="to" index="2rhKEX" />
       </concept>
-      <concept id="6067396029160127915" name="pipeline.structure.SplitText" flags="ng" index="2hxWkx">
-        <child id="2531445403709508670" name="text" index="2rhKKg" />
-      </concept>
-      <concept id="3043354323450449555" name="pipeline.structure.SplitSentence" flags="ng" index="3kPugM">
-        <child id="2531445403709508248" name="sentences" index="2rhKEQ" />
+      <concept id="2755985269628070211" name="pipeline.structure.ConcatenateTexts" flags="ng" index="sndd3">
+        <child id="2755985269628070239" name="texts" index="snddv" />
       </concept>
       <concept id="3043354323452922510" name="pipeline.structure.Path" flags="ng" index="3lcU0J">
         <property id="3043354323452922619" name="value" index="3lcU1q" />
       </concept>
       <concept id="894693271984989188" name="pipeline.structure.FilterExpression" flags="ng" index="1JWBbe">
-        <child id="6362316727019275066" name="filter" index="3QMvTw" />
+        <child id="9193467893399274911" name="filter" index="1R$0v8" />
       </concept>
       <concept id="894693271985218886" name="pipeline.structure.MyExpression" flags="ng" index="1JXJec" />
-      <concept id="7443179836098853006" name="pipeline.structure.MergeSentences" flags="ng" index="1PjGgI">
-        <child id="7443179836098853061" name="sentences" index="1PjGh_" />
-      </concept>
-      <concept id="7443179836099671089" name="pipeline.structure.MergeTokens" flags="ng" index="1Pmkyh">
-        <child id="7443179836099671207" name="tokens" index="1Pmkw7" />
-      </concept>
     </language>
   </registry>
-  <node concept="2hxWkd" id="2oZew0Umvox">
-    <property role="TrG5h" value="SimplePipeline" />
-    <node concept="3lcU0J" id="2oZew0Umvp1" role="2rhKEX">
-      <property role="3lcU1q" value="/home/yulya/MPSProjects/my_pipeline/pipeline/output.txt" />
-      <node concept="1JXJec" id="2oZew0Umvp4" role="3QMvTw" />
+  <node concept="2hxWkd" id="7YlK_s81$VV">
+    <property role="TrG5h" value="SomePipeline" />
+    <node concept="3lcU0J" id="7YlK_s81$WB" role="2rhKEX">
+      <property role="3lcU1q" value="D:/output.txt" />
+      <node concept="1JXJec" id="7YlK_s81$WE" role="1R$0v8" />
     </node>
-    <node concept="1PjGgI" id="6tbva0i6fSz" role="2rhKEy">
-      <node concept="1JXJec" id="6tbva0i6fSA" role="3QMvTw" />
-      <node concept="1Pmkyh" id="6tbva0i5IX_" role="1PjGh_">
-        <node concept="3kPugM" id="6tbva0i5IXT" role="1Pmkw7">
-          <node concept="2hxWkx" id="6tbva0i5IYd" role="2rhKEQ">
-            <node concept="3lcU0J" id="6tbva0i5IYx" role="2rhKKg">
-              <property role="3lcU1q" value="/home/yulya/MPSProjects/my_pipeline/pipeline/input.txt" />
-              <node concept="1JXJec" id="6tbva0i5IY$" role="3QMvTw" />
-            </node>
-            <node concept="1JXJec" id="6tbva0i5IYm" role="3QMvTw" />
-          </node>
-          <node concept="1JXJec" id="6tbva0i5IY2" role="3QMvTw" />
-        </node>
-        <node concept="1JXJec" id="6tbva0i5IXI" role="3QMvTw" />
+    <node concept="sndd3" id="7YlK_s82py6" role="2rhKEy">
+      <node concept="1JXJec" id="7YlK_s82py9" role="1R$0v8" />
+      <node concept="3lcU0J" id="7YlK_s82pyM" role="snddv">
+        <property role="3lcU1q" value="D:/PipelineRight/input.txt" />
+        <node concept="1JXJec" id="7YlK_s82pyN" role="1R$0v8" />
+      </node>
+      <node concept="3lcU0J" id="7YlK_s82pyW" role="snddv">
+        <property role="3lcU1q" value="D:/PipelineRight/input.txt" />
+        <node concept="1JXJec" id="7YlK_s82pyZ" role="1R$0v8" />
       </node>
     </node>
   </node>

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="pipeline.runtime.ConcatenateTexts" file="ConcatenateTexts.java">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.LinkedList" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.concurrent.ConcurrentLinkedQueue" />
+    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
+    <classNode dependClassName="pipeline.runtime.Item" />
+    <classNode dependClassName="pipeline.runtime.TextItem" />
+    <classNode extendsClassName="pipeline.runtime.Filter" />
+  </dependency>
   <dependency className="pipeline.runtime.Filter" file="Filter.java">
     <classNode dependClassName="pipeline.runtime.Item" />
     <classNode extendsClassName="java.lang.Thread" />

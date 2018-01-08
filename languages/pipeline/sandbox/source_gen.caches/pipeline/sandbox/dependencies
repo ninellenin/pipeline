@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="pipeline.sandbox.SimplePipeline" file="SimplePipeline.java">
+  <dependency className="pipeline.sandbox.SomePipeline" file="SomePipeline.java">
     <classNode dependClassName="java.io.FileNotFoundException" />
     <classNode dependClassName="java.io.FileOutputStream" />
     <classNode dependClassName="java.io.PrintWriter" />
@@ -9,13 +9,10 @@
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Thread" />
+    <classNode dependClassName="pipeline.runtime.ConcatenateTexts" />
     <classNode dependClassName="pipeline.runtime.Filter" />
     <classNode dependClassName="pipeline.runtime.Item" />
-    <classNode dependClassName="pipeline.runtime.MergeSentences" />
-    <classNode dependClassName="pipeline.runtime.MergeTokens" />
     <classNode dependClassName="pipeline.runtime.Reader" />
-    <classNode dependClassName="pipeline.runtime.SplitSentence" />
-    <classNode dependClassName="pipeline.runtime.SplitText" />
     <classNode dependClassName="pipeline.runtime.TextItem" />
   </dependency>
 </dependenciesRoot>

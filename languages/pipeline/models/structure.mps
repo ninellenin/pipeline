@@ -133,8 +133,8 @@
     <property role="EcuMT" value="894693271984989188" />
     <property role="TrG5h" value="FilterExpression" />
     <ref role="1TJDcQ" node="LE_GDzB6l6" resolve="MyExpression" />
-    <node concept="1TJgyj" id="5xbvlEIwCcU" role="1TKVEi">
-      <property role="IQ2ns" value="6362316727019275066" />
+    <node concept="1TJgyj" id="7YlK_s81smv" role="1TKVEi">
+      <property role="IQ2ns" value="9193467893399274911" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="filter" />
       <property role="20lbJX" value="1" />
@@ -183,6 +183,18 @@
       <property role="20kJfa" value="tokens" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2cxw2USpVik" resolve="TokenExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2oZew0UoY_3">
+    <property role="EcuMT" value="2755985269628070211" />
+    <property role="TrG5h" value="ConcatenateTexts" />
+    <ref role="1TJDcQ" node="1HuB4adeiW0" resolve="TextExpression" />
+    <node concept="1TJgyj" id="2oZew0UoY_v" role="1TKVEi">
+      <property role="IQ2ns" value="2755985269628070239" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="texts" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="1HuB4adeiW0" resolve="TextExpression" />
     </node>
   </node>
 </model>

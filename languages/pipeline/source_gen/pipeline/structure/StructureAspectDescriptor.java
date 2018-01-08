@@ -12,7 +12,10 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptConcatenateTexts = createDescriptorForConcatenateTexts();
   /*package*/ final ConceptDescriptor myConceptFilterExpression = createDescriptorForFilterExpression();
+  /*package*/ final ConceptDescriptor myConceptMergeSentences = createDescriptorForMergeSentences();
+  /*package*/ final ConceptDescriptor myConceptMergeTokens = createDescriptorForMergeTokens();
   /*package*/ final ConceptDescriptor myConceptMyExpression = createDescriptorForMyExpression();
   /*package*/ final ConceptDescriptor myConceptOutput = createDescriptorForOutput();
   /*package*/ final ConceptDescriptor myConceptPath = createDescriptorForPath();
@@ -30,15 +33,21 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptFilterExpression, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSentenceExpression, myConceptSplitSentence, myConceptSplitText, myConceptTextExpression, myConceptTokenExpression);
+    return Arrays.asList(myConceptConcatenateTexts, myConceptFilterExpression, myConceptMergeSentences, myConceptMergeTokens, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSentenceExpression, myConceptSplitSentence, myConceptSplitText, myConceptTextExpression, myConceptTokenExpression);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myConceptIndex.index(id)) {
+      case LanguageConceptSwitch.ConcatenateTexts:
+        return myConceptConcatenateTexts;
       case LanguageConceptSwitch.FilterExpression:
         return myConceptFilterExpression;
+      case LanguageConceptSwitch.MergeSentences:
+        return myConceptMergeSentences;
+      case LanguageConceptSwitch.MergeTokens:
+        return myConceptMergeTokens;
       case LanguageConceptSwitch.MyExpression:
         return myConceptMyExpression;
       case LanguageConceptSwitch.Output:
@@ -66,12 +75,36 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     return myConceptIndex.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForConcatenateTexts() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "ConcatenateTexts", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x263f3a003a63e943L);
+    b.class_(false, false, false);
+    b.super_("pipeline.structure.TextExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x1b5e9c428d392f00L);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/2755985269628070211");
+    b.aggregate("texts", 0x263f3a003a63e95fL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x1b5e9c428d392f00L).optional(false).ordered(true).multiple(true).origin("2755985269628070239").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForFilterExpression() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "FilterExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e404L);
     b.class_(false, false, false);
     b.super_("pipeline.structure.MyExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca639c6546L);
     b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/894693271984989188");
-    b.aggregate("filter", 0x584b7d5aae82833aL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca639c6546L).optional(false).ordered(true).multiple(false).origin("6362316727019275066").done();
+    b.aggregate("filter", 0x7f95c2570805c59fL).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca639c6546L).optional(false).ordered(true).multiple(false).origin("9193467893399274911").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMergeSentences() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "MergeSentences", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x674b7ca01205b88eL);
+    b.class_(false, false, false);
+    b.super_("pipeline.structure.TextExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x1b5e9c428d392f00L);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/7443179836098853006");
+    b.aggregate("sentences", 0x674b7ca01205b8c5L).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca63a273b2L).optional(false).ordered(true).multiple(false).origin("7443179836098853061").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForMergeTokens() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "MergeTokens", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x674b7ca012123431L);
+    b.class_(false, false, false);
+    b.super_("pipeline.structure.SentenceExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca63a273b2L);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/7443179836099671089");
+    b.aggregate("tokens", 0x674b7ca0121234a7L).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2321802eb867b494L).optional(false).ordered(true).multiple(false).origin("7443179836099671207").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMyExpression() {

@@ -8,13 +8,10 @@ import java.io.FileOutputStream;
 import java.io.FileNotFoundException;
 import pipeline.runtime.Item;
 import pipeline.runtime.TextItem;
-import pipeline.runtime.MergeSentences;
-import pipeline.runtime.MergeTokens;
-import pipeline.runtime.SplitSentence;
-import pipeline.runtime.SplitText;
+import pipeline.runtime.ConcatenateTexts;
 import pipeline.runtime.Reader;
 
-public class SimplePipeline {
+public class SomePipeline {
   private class Writer extends Thread {
     private PrintWriter output;
     private Filter input;
@@ -42,13 +39,13 @@ public class SimplePipeline {
     }
   }
 
-  private SimplePipeline.Writer writer;
+  private SomePipeline.Writer writer;
   private Filter filter;
 
-  public SimplePipeline() {
+  public SomePipeline() {
     System.out.println("Init start");
-    filter = new MergeSentences(new MergeTokens(new SplitSentence(new SplitText(new Reader("/home/yulya/MPSProjects/my_pipeline/pipeline/input.txt")))));
-    writer = new SimplePipeline.Writer("/home/yulya/MPSProjects/my_pipeline/pipeline/output.txt", filter);
+    filter = new ConcatenateTexts(new Reader("D:/PipelineRight/input.txt"), new Reader("D:/PipelineRight/input.txt"), null);
+    writer = new SomePipeline.Writer("D:/output.txt", filter);
     System.out.println("Init finish");
   }
 
@@ -65,6 +62,6 @@ public class SimplePipeline {
 
   public static void main(String[] args) {
     System.out.println("main()");
-    (new SimplePipeline()).myRun();
+    (new SomePipeline()).myRun();
   }
 }

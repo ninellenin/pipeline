@@ -9,20 +9,26 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int FilterExpression = 0;
-  public static final int MyExpression = 1;
-  public static final int Output = 2;
-  public static final int Path = 3;
-  public static final int Pipeline = 4;
-  public static final int SentenceExpression = 5;
-  public static final int SplitSentence = 6;
-  public static final int SplitText = 7;
-  public static final int TextExpression = 8;
-  public static final int TokenExpression = 9;
+  public static final int ConcatenateTexts = 0;
+  public static final int FilterExpression = 1;
+  public static final int MergeSentences = 2;
+  public static final int MergeTokens = 3;
+  public static final int MyExpression = 4;
+  public static final int Output = 5;
+  public static final int Path = 6;
+  public static final int Pipeline = 7;
+  public static final int SentenceExpression = 8;
+  public static final int SplitSentence = 9;
+  public static final int SplitText = 10;
+  public static final int TextExpression = 11;
+  public static final int TokenExpression = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL);
+    builder.put(0x263f3a003a63e943L, ConcatenateTexts);
     builder.put(0xc6a96ca6398e404L, FilterExpression);
+    builder.put(0x674b7ca01205b88eL, MergeSentences);
+    builder.put(0x674b7ca012123431L, MergeTokens);
     builder.put(0xc6a96ca639c6546L, MyExpression);
     builder.put(0xc6a96ca6398e26dL, Output);
     builder.put(0x2a3c2aa1ff0f8a8eL, Path);
