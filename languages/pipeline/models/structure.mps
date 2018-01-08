@@ -197,5 +197,17 @@
       <ref role="20lvS9" node="1HuB4adeiW0" resolve="TextExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7YlK_s83qUD">
+    <property role="EcuMT" value="9193467893399793321" />
+    <property role="TrG5h" value="UpperCaseToken" />
+    <ref role="1TJDcQ" node="2cxw2USpVik" resolve="TokenExpression" />
+    <node concept="1TJgyj" id="7YlK_s83qV5" role="1TKVEi">
+      <property role="IQ2ns" value="9193467893399793349" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="tokens" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="2cxw2USpVik" resolve="TokenExpression" />
+    </node>
+  </node>
 </model>
 

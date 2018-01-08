@@ -22,6 +22,7 @@ public final class LanguageConceptSwitch {
   public static final int SplitText = 10;
   public static final int TextExpression = 11;
   public static final int TokenExpression = 12;
+  public static final int UpperCaseToken = 13;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL);
@@ -38,6 +39,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x5433b88ac5b47dabL, SplitText);
     builder.put(0x1b5e9c428d392f00L, TextExpression);
     builder.put(0x2321802eb867b494L, TokenExpression);
+    builder.put(0x7f95c257080daea9L, UpperCaseToken);
     myIndex = builder.seal();
   }
 

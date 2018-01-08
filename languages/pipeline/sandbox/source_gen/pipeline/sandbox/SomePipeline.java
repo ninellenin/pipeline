@@ -10,6 +10,11 @@ import pipeline.runtime.Item;
 import pipeline.runtime.TextItem;
 import pipeline.runtime.ConcatenateTexts;
 import pipeline.runtime.Reader;
+import pipeline.runtime.MergeSentences;
+import pipeline.runtime.MergeTokens;
+import pipeline.runtime.UpperCaseToken;
+import pipeline.runtime.SplitSentence;
+import pipeline.runtime.SplitText;
 
 public class SomePipeline {
   private class Writer extends Thread {
@@ -44,7 +49,7 @@ public class SomePipeline {
 
   public SomePipeline() {
     System.out.println("Init start");
-    filter = new ConcatenateTexts(new Reader("D:/PipelineRight/input.txt"), new Reader("D:/PipelineRight/input.txt"), null);
+    filter = new ConcatenateTexts(new Reader("D:/PipelineRight/input.txt"), new MergeSentences(new MergeTokens(new UpperCaseToken(new SplitSentence(new SplitText(new Reader("D:/PipelineRight/input.txt")))))), null);
     writer = new SomePipeline.Writer("D:/output.txt", filter);
     System.out.println("Init finish");
   }

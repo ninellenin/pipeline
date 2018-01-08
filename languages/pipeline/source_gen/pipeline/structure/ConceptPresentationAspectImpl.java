@@ -22,6 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_SplitText;
   private ConceptPresentation props_TextExpression;
   private ConceptPresentation props_TokenExpression;
+  private ConceptPresentation props_UpperCaseToken;
 
   @Override
   @Nullable
@@ -119,6 +120,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TokenExpression = cpb.create();
         }
         return props_TokenExpression;
+      case LanguageConceptSwitch.UpperCaseToken:
+        if (props_UpperCaseToken == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("UpperCaseToken");
+          props_UpperCaseToken = cpb.create();
+        }
+        return props_UpperCaseToken;
     }
     return null;
   }

@@ -12,8 +12,13 @@
     <classNode dependClassName="pipeline.runtime.ConcatenateTexts" />
     <classNode dependClassName="pipeline.runtime.Filter" />
     <classNode dependClassName="pipeline.runtime.Item" />
+    <classNode dependClassName="pipeline.runtime.MergeSentences" />
+    <classNode dependClassName="pipeline.runtime.MergeTokens" />
     <classNode dependClassName="pipeline.runtime.Reader" />
+    <classNode dependClassName="pipeline.runtime.SplitSentence" />
+    <classNode dependClassName="pipeline.runtime.SplitText" />
     <classNode dependClassName="pipeline.runtime.TextItem" />
+    <classNode dependClassName="pipeline.runtime.UpperCaseToken" />
   </dependency>
 </dependenciesRoot>
 

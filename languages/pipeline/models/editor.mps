@@ -336,5 +336,47 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7YlK_s83qV7">
+    <ref role="1XX52x" to="k4u8:7YlK_s83qUD" resolve="UpperCaseToken" />
+    <node concept="3EZMnI" id="7YlK_s83qV$" role="2wV5jI">
+      <node concept="l2Vlx" id="7YlK_s83qV_" role="2iSdaV" />
+      <node concept="3F0ifn" id="7YlK_s83qVA" role="3EZMnx">
+        <property role="3F0ifm" value="upperCaseToken" />
+      </node>
+      <node concept="3F0ifn" id="7YlK_s83qVB" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="3mYdg7" id="7YlK_s83qVC" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+        <node concept="ljvvj" id="7YlK_s83qVD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7YlK_s83qVE" role="3EZMnx">
+        <node concept="l2Vlx" id="7YlK_s83qVF" role="2iSdaV" />
+        <node concept="lj46D" id="7YlK_s83qVG" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F1sOY" id="7YlK_s83qVL" role="3EZMnx">
+          <ref role="1NtTu8" to="k4u8:7YlK_s83qV5" resolve="tokens" />
+          <node concept="lj46D" id="7YlK_s83qVM" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="ljvvj" id="7YlK_s83qVN" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="pj6Ft" id="7YlK_s83qWL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7YlK_s83qVX" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="3mYdg7" id="7YlK_s83qVY" role="3F10Kt">
+          <property role="1413C4" value="body-brace" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

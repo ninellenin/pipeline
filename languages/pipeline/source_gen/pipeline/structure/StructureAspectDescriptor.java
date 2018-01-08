@@ -25,6 +25,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptSplitText = createDescriptorForSplitText();
   /*package*/ final ConceptDescriptor myConceptTextExpression = createDescriptorForTextExpression();
   /*package*/ final ConceptDescriptor myConceptTokenExpression = createDescriptorForTokenExpression();
+  /*package*/ final ConceptDescriptor myConceptUpperCaseToken = createDescriptorForUpperCaseToken();
   private final LanguageConceptSwitch myConceptIndex;
 
   public StructureAspectDescriptor() {
@@ -33,7 +34,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptConcatenateTexts, myConceptFilterExpression, myConceptMergeSentences, myConceptMergeTokens, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSentenceExpression, myConceptSplitSentence, myConceptSplitText, myConceptTextExpression, myConceptTokenExpression);
+    return Arrays.asList(myConceptConcatenateTexts, myConceptFilterExpression, myConceptMergeSentences, myConceptMergeTokens, myConceptMyExpression, myConceptOutput, myConceptPath, myConceptPipeline, myConceptSentenceExpression, myConceptSplitSentence, myConceptSplitText, myConceptTextExpression, myConceptTokenExpression, myConceptUpperCaseToken);
   }
 
   @Override
@@ -66,6 +67,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptTextExpression;
       case LanguageConceptSwitch.TokenExpression:
         return myConceptTokenExpression;
+      case LanguageConceptSwitch.UpperCaseToken:
+        return myConceptUpperCaseToken;
       default:
         return null;
     }
@@ -179,6 +182,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.super_("pipeline.structure.FilterExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e404L);
     b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/2531445403709584532");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForUpperCaseToken() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("pipeline", "UpperCaseToken", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x7f95c257080daea9L);
+    b.class_(false, false, false);
+    b.super_("pipeline.structure.TokenExpression", 0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2321802eb867b494L);
+    b.origin("r:5b671864-0da2-4a56-aca4-190af62444b8(pipeline.structure)/9193467893399793321");
+    b.aggregate("tokens", 0x7f95c257080daec5L).target(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2321802eb867b494L).optional(false).ordered(true).multiple(false).origin("9193467893399793349").done();
     return b.create();
   }
 }

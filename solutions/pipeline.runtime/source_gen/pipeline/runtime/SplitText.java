@@ -21,7 +21,6 @@ public class SplitText extends Filter<TextItem, SentenceItem> {
     boolean begin = true;
 
     while (!((item.getState() == Item.State.KEY_WORD && item.getValue().equals(TextItem.END_OF_TEXT)))) {
-      System.out.println("SplitText: " + item.getValue() + ", " + item.getState());
       if (item.isBeginOfText()) {
         output.add(new SentenceItem(item.getState(), item.getValue()));
       } else if (item.getState() != Item.State.EMPTY) {

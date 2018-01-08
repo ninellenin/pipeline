@@ -20,16 +20,13 @@ public class SplitSentence extends Filter<SentenceItem, TokenItem> {
   @Override
   public void run() {
     input.start();
-    System.out.println("RUUUUN!!!");
     SentenceItem item = input.getItem();
-    System.out.println("POOOOOL");
 
     StringBuilder builder = new StringBuilder();
 
     while (!((item.getState() == Item.State.KEY_WORD && item.getValue().equals(TextItem.END_OF_TEXT)))) {
 
       if (item.getState() != Item.State.EMPTY) {
-        System.out.println("Try print!!!");
         if (item.getState() == Item.State.KEY_WORD) {
           if (item.getValue().equals(SentenceItem.BEGIN_OF_SENTENCE)) {
             builder = new StringBuilder();
