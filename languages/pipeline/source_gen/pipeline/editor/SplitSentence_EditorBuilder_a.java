@@ -13,6 +13,14 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
+import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
+import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
+import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 
 /*package*/ class SplitSentence_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -40,7 +48,8 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
     editorCell.setCellContext(getCellFactory().getCellContext());
     editorCell.addEditorCell(createConstant_njovgn_a0());
     editorCell.addEditorCell(createConstant_njovgn_b0());
-    editorCell.addEditorCell(createConstant_njovgn_c0());
+    editorCell.addEditorCell(createRefNode_njovgn_c0());
+    editorCell.addEditorCell(createConstant_njovgn_d0());
     return editorCell;
   }
   private EditorCell createConstant_njovgn_a0() {
@@ -60,9 +69,64 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createConstant_njovgn_c0() {
+  private EditorCell createRefNode_njovgn_c0() {
+    SingleRoleCellProvider provider = new SplitSentence_EditorBuilder_a.sentencesSingleRoleHandler_njovgn_c0(myNode, MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1fee9ce93L, 0x263f3a003a450404L, "sentences"), getEditorContext());
+    return provider.createCell();
+  }
+  private static class sentencesSingleRoleHandler_njovgn_c0 extends SingleRoleCellProvider {
+    @NotNull
+    private SNode myNode;
+
+    public sentencesSingleRoleHandler_njovgn_c0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+      super(containmentLink, context);
+      myNode = ownerNode;
+    }
+
+    @Override
+    @NotNull
+    public SNode getNode() {
+      return myNode;
+    }
+
+    protected EditorCell createChildCell(SNode child) {
+      EditorCell editorCell = getUpdateSession().updateChildNodeCell(child);
+      editorCell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1fee9ce93L, 0x263f3a003a450404L, "sentences"), child));
+      editorCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(getNode(), MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1fee9ce93L, 0x263f3a003a450404L, "sentences"), child));
+      installCellInfo(child, editorCell);
+      return editorCell;
+    }
+
+
+
+    private void installCellInfo(SNode child, EditorCell editorCell) {
+      if (editorCell.getSubstituteInfo() == null || editorCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+        editorCell.setSubstituteInfo(new SChildSubstituteInfo(editorCell, myNode, MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1fee9ce93L, 0x263f3a003a450404L, "sentences"), child));
+      }
+      if (editorCell.getRole() == null) {
+        editorCell.setRole("sentences");
+      }
+    }
+    @Override
+    protected EditorCell createEmptyCell() {
+      getCellFactory().pushCellContext();
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(getNode(), MetaAdapterFactory.getContainmentLink(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0x2a3c2aa1fee9ce93L, 0x263f3a003a450404L, "sentences")));
+      try {
+        EditorCell editorCell = super.createEmptyCell();
+        editorCell.setCellId("empty_sentences");
+        installCellInfo(null, editorCell);
+        setCellContext(editorCell);
+        return editorCell;
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
+    protected String getNoTargetText() {
+      return "<no sentences>";
+    }
+  }
+  private EditorCell createConstant_njovgn_d0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ")");
-    editorCell.setCellId("Constant_njovgn_c0");
+    editorCell.setCellId("Constant_njovgn_d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.MATCHING_LABEL, "body-paren");

@@ -1,23 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="pipeline.sandbox.aaa" file="aaa.java">
-    <classNode dependClassName="java.io.BufferedReader" />
+  <dependency className="pipeline.sandbox.SimplePipeline" file="SimplePipeline.java">
     <classNode dependClassName="java.io.FileNotFoundException" />
     <classNode dependClassName="java.io.FileOutputStream" />
-    <classNode dependClassName="java.io.FileReader" />
-    <classNode dependClassName="java.io.IOException" />
     <classNode dependClassName="java.io.PrintWriter" />
-    <classNode dependClassName="java.lang.Exception" />
+    <classNode dependClassName="java.lang.InterruptedException" />
     <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.Runnable" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
     <classNode dependClassName="java.lang.Thread" />
-    <classNode dependClassName="java.util.LinkedList" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.concurrent.ConcurrentLinkedQueue" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode dependClassName="pipeline.sandbox.IFilter" />
+    <classNode dependClassName="pipeline.runtime.Filter" />
+    <classNode dependClassName="pipeline.runtime.Item" />
+    <classNode dependClassName="pipeline.runtime.Reader" />
+    <classNode dependClassName="pipeline.runtime.SplitText" />
+    <classNode dependClassName="pipeline.runtime.TextItem" />
   </dependency>
 </dependenciesRoot>
 

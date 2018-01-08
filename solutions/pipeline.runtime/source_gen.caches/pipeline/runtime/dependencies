@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="pipeline.runtime.IFilter" file="IFilter.java">
-    <classNode dependClassName="java.util.List" />
+  <dependency className="pipeline.runtime.Filter" file="Filter.java">
+    <classNode dependClassName="pipeline.runtime.Item" />
+    <classNode extendsClassName="java.lang.Thread" />
+  </dependency>
+  <dependency className="pipeline.runtime.Item" file="Item.java">
+    <classNode dependClassName="java.lang.String" />
+  </dependency>
+  <dependency className="pipeline.runtime.Reader" file="Reader.java">
+    <classNode dependClassName="java.io.BufferedReader" />
+    <classNode dependClassName="java.io.FileNotFoundException" />
+    <classNode dependClassName="java.io.FileReader" />
+    <classNode dependClassName="java.io.IOException" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.concurrent.ConcurrentLinkedQueue" />
-    <classNode extendsClassName="java.lang.Runnable" />
+    <classNode dependClassName="pipeline.runtime.Item" />
+    <classNode dependClassName="pipeline.runtime.TextItem" />
+    <classNode extendsClassName="pipeline.runtime.Filter" />
+  </dependency>
+  <dependency className="pipeline.runtime.SentenceItem" file="SentenceItem.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="pipeline.runtime.Item" />
   </dependency>
   <dependency className="pipeline.runtime.SplitSentence" file="SplitSentence.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.System" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.concurrent.ConcurrentLinkedQueue" />
-    <classNode extendsClassName="pipeline.runtime.IFilter" />
+    <classNode dependClassName="pipeline.runtime.Item" />
+    <classNode dependClassName="pipeline.runtime.SentenceItem" />
+    <classNode extendsClassName="pipeline.runtime.Filter" />
   </dependency>
   <dependency className="pipeline.runtime.SplitText" file="SplitText.java">
     <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.System" />
-    <classNode dependClassName="java.util.LinkedList" />
-    <classNode dependClassName="java.util.List" />
     <classNode dependClassName="java.util.concurrent.ConcurrentLinkedQueue" />
-    <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
-    <classNode extendsClassName="pipeline.runtime.IFilter" />
+    <classNode dependClassName="pipeline.runtime.Item" />
+    <classNode dependClassName="pipeline.runtime.SentenceItem" />
+    <classNode dependClassName="pipeline.runtime.TextItem" />
+    <classNode extendsClassName="pipeline.runtime.Filter" />
+  </dependency>
+  <dependency className="pipeline.runtime.TextItem" file="TextItem.java">
+    <classNode dependClassName="java.lang.String" />
+    <classNode extendsClassName="pipeline.runtime.Item" />
   </dependency>
 </dependenciesRoot>
 

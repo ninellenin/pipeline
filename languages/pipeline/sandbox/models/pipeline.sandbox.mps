@@ -18,11 +18,11 @@
     </language>
     <language id="7655a5e7-076c-42d6-b885-3f94b3d29c6b" name="pipeline">
       <concept id="6067396029160127879" name="pipeline.structure.Pipeline" flags="ng" index="2hxWkd">
-        <child id="3043354323453076047" name="filters" index="3lbszI" />
+        <child id="3043354323453076047" name="filter" index="3lbszI" />
         <child id="894693271984988820" name="output" index="1JWBhu" />
       </concept>
       <concept id="6067396029160127915" name="pipeline.structure.SplitText" flags="ng" index="2hxWkx">
-        <child id="1972185496485965566" name="text" index="2mpVaW" />
+        <child id="2755985269626040946" name="text" index="suWxM" />
       </concept>
       <concept id="3043354323452922510" name="pipeline.structure.Path" flags="ng" index="3lcU0J">
         <property id="3043354323452922619" name="value" index="3lcU1q" />
@@ -36,36 +36,21 @@
       </concept>
     </language>
   </registry>
-  <node concept="2hxWkd" id="LE_GDzBaR2">
-    <property role="TrG5h" value="aaa" />
-    <node concept="1JWBiB" id="LE_GDzBaR3" role="1JWBhu">
-      <node concept="1JWBbe" id="LE_GDzCrsV" role="1JWBh3">
-        <ref role="1JWBbE" node="LE_GDzCrsn" resolve="b" />
-      </node>
-      <node concept="3lcU0J" id="LE_GDzBaR5" role="1JWBh6">
-        <property role="3lcU1q" value="&quot;output.txt&quot;" />
+  <node concept="2hxWkd" id="2oZew0Uhz9K">
+    <property role="TrG5h" value="SimplePipeline" />
+    <node concept="2hxWkx" id="2oZew0Uhzag" role="3lbszI">
+      <property role="TrG5h" value="split" />
+      <node concept="3lcU0J" id="2oZew0Uhzaq" role="suWxM">
+        <property role="3lcU1q" value="input.txt" />
       </node>
     </node>
-    <node concept="2hxWkx" id="LE_GDzCrsn" role="3lbszI">
-      <property role="TrG5h" value="b" />
-      <node concept="3lcU0J" id="LE_GDzCrsr" role="2mpVaW">
-        <property role="3lcU1q" value="&quot;in.txt&quot;" />
+    <node concept="1JWBiB" id="2oZew0Uhz9M" role="1JWBhu">
+      <node concept="1JWBbe" id="2oZew0Uhzav" role="1JWBh3">
+        <ref role="1JWBbE" node="2oZew0Uhzag" resolve="split" />
       </node>
-    </node>
-  </node>
-  <node concept="2hxWkd" id="LE_GDzC$G4">
-    <property role="TrG5h" value="SomePipeline" />
-    <node concept="1JWBiB" id="LE_GDzC$G6" role="1JWBhu">
-      <node concept="3lcU0J" id="LE_GDzC$G8" role="1JWBh6">
-        <property role="3lcU1q" value="out.txt" />
+      <node concept="3lcU0J" id="2oZew0Uhza$" role="1JWBh6">
+        <property role="3lcU1q" value="output.txt" />
       </node>
-      <node concept="1JWBbe" id="LE_GDzC$GH" role="1JWBh3">
-        <ref role="1JWBbE" node="LE_GDzC$G$" resolve="a" />
-      </node>
-    </node>
-    <node concept="2hxWkx" id="LE_GDzCBeG" role="3lbszI">
-      <property role="TrG5h" value="a" />
-      <node concept="3lcU0J" id="LE_GDzCBeK" role="2mpVaW" />
     </node>
   </node>
 </model>
