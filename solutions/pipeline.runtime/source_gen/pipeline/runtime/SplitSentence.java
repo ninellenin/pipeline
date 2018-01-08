@@ -71,7 +71,12 @@ public class SplitSentence extends Filter<SentenceItem, Item> {
   }
 
   @Override
-  public Item getItem() {
-    return null;
+  public TokenItem getItem() {
+    TokenItem item = output.poll();
+    if (item == null) {
+      return new TokenItem(Item.State.EMPTY, null);
+    } else {
+      return item;
+    }
   }
 }

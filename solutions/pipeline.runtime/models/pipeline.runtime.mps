@@ -982,13 +982,57 @@
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
-      <node concept="3uibUv" id="2oZew0UgYL1" role="3clF45">
-        <ref role="3uigEE" node="2oZew0UcOgr" resolve="Item" />
+      <node concept="3uibUv" id="6tbva0i1dzJ" role="3clF45">
+        <ref role="3uigEE" node="2oZew0UmUvK" resolve="TokenItem" />
       </node>
       <node concept="3Tm1VV" id="2oZew0UgYL0" role="1B3o_S" />
       <node concept="3clFbS" id="2oZew0UgYL2" role="3clF47">
-        <node concept="3cpWs6" id="2oZew0UgYSn" role="3cqZAp">
-          <node concept="10Nm6u" id="2oZew0UgYT5" role="3cqZAk" />
+        <node concept="3cpWs8" id="6tbva0i1htt" role="3cqZAp">
+          <node concept="3cpWsn" id="6tbva0i1htu" role="3cpWs9">
+            <property role="TrG5h" value="item" />
+            <node concept="3uibUv" id="6tbva0i1iFj" role="1tU5fm">
+              <ref role="3uigEE" node="2oZew0UmUvK" resolve="TokenItem" />
+            </node>
+            <node concept="2OqwBi" id="6tbva0i1htw" role="33vP2m">
+              <node concept="37vLTw" id="6tbva0i1htx" role="2Oq$k0">
+                <ref role="3cqZAo" node="2oZew0UmThD" resolve="output" />
+              </node>
+              <node concept="liA8E" id="6tbva0i1hty" role="2OqNvi">
+                <ref role="37wK5l" to="5zyv:~ConcurrentLinkedQueue.poll():java.lang.Object" resolve="poll" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6tbva0i1htz" role="3cqZAp">
+          <node concept="3clFbC" id="6tbva0i1ht$" role="3clFbw">
+            <node concept="10Nm6u" id="6tbva0i1ht_" role="3uHU7w" />
+            <node concept="37vLTw" id="6tbva0i1htA" role="3uHU7B">
+              <ref role="3cqZAo" node="6tbva0i1htu" resolve="item" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6tbva0i1htB" role="3clFbx">
+            <node concept="3cpWs6" id="6tbva0i1htC" role="3cqZAp">
+              <node concept="2ShNRf" id="6tbva0i1htD" role="3cqZAk">
+                <node concept="1pGfFk" id="6tbva0i1htE" role="2ShVmc">
+                  <ref role="37wK5l" node="2oZew0UmUxm" resolve="TokenItem" />
+                  <node concept="Rm8GO" id="6tbva0i1htF" role="37wK5m">
+                    <ref role="1Px2BO" node="2oZew0UcOhe" resolve="Item.State" />
+                    <ref role="Rm8GQ" node="2oZew0Ud_Dn" resolve="EMPTY" />
+                  </node>
+                  <node concept="10Nm6u" id="6tbva0i1htG" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="9aQIb" id="6tbva0i1htH" role="9aQIa">
+            <node concept="3clFbS" id="6tbva0i1htI" role="9aQI4">
+              <node concept="3cpWs6" id="6tbva0i1htJ" role="3cqZAp">
+                <node concept="37vLTw" id="6tbva0i1htK" role="3cqZAk">
+                  <ref role="3cqZAo" node="6tbva0i1htu" resolve="item" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="2AHcQZ" id="2oZew0UgYL3" role="2AJF6D">
