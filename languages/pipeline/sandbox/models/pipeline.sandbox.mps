@@ -38,18 +38,18 @@
   </registry>
   <node concept="2hxWkd" id="2oZew0Uhz9K">
     <property role="TrG5h" value="SimplePipeline" />
-    <node concept="2hxWkx" id="2oZew0Uhzag" role="3lbszI">
-      <property role="TrG5h" value="split" />
-      <node concept="3lcU0J" id="2oZew0Uhzaq" role="suWxM">
-        <property role="3lcU1q" value="input.txt" />
-      </node>
-    </node>
     <node concept="1JWBiB" id="2oZew0Uhz9M" role="1JWBhu">
-      <node concept="1JWBbe" id="2oZew0Uhzav" role="1JWBh3">
-        <ref role="1JWBbE" node="2oZew0Uhzag" resolve="split" />
+      <node concept="1JWBbe" id="2oZew0UlJcY" role="1JWBh3">
+        <ref role="1JWBbE" node="2oZew0UlduU" resolve="a" />
       </node>
       <node concept="3lcU0J" id="2oZew0Uhza$" role="1JWBh6">
-        <property role="3lcU1q" value="output.txt" />
+        <property role="3lcU1q" value="D:/output.txt" />
+      </node>
+    </node>
+    <node concept="2hxWkx" id="2oZew0UlduU" role="3lbszI">
+      <property role="TrG5h" value="a" />
+      <node concept="3lcU0J" id="2oZew0Uldv2" role="suWxM">
+        <property role="3lcU1q" value="D:/PipelineRight/input.txt" />
       </node>
     </node>
   </node>

@@ -69,14 +69,16 @@
   </root>
   <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/2755985269624938733">
     <file name="SentenceItem.java">
-      <node id="2755985269624938968" at="7,55,8,24" concept="10" />
-      <node id="2755985269624938965" at="7,0,10,0" concept="1" trace="SentenceItem#(Lpipeline/runtime/Item/State;Ljava/lang/String;)V" />
-      <scope id="2755985269624938967" at="7,55,8,24" />
-      <scope id="2755985269624938965" at="7,0,10,0">
+      <node id="2755985269627032139" at="7,0,8,0" concept="9" trace="END_OF_SENTENCE" />
+      <node id="2755985269627032143" at="8,0,9,0" concept="9" trace="BEGIN_OF_TEXT" />
+      <node id="2755985269624938968" at="10,55,11,24" concept="10" />
+      <node id="2755985269624938965" at="10,0,13,0" concept="1" trace="SentenceItem#(Lpipeline/runtime/Item/State;Ljava/lang/String;)V" />
+      <scope id="2755985269624938967" at="10,55,11,24" />
+      <scope id="2755985269624938965" at="10,0,13,0">
         <var name="state" id="2755985269624938972" />
         <var name="value" id="2755985269624938974" />
       </scope>
-      <unit id="2755985269624938733" at="6,0,11,0" name="pipeline.runtime.SentenceItem" />
+      <unit id="2755985269624938733" at="6,0,14,0" name="pipeline.runtime.SentenceItem" />
     </file>
   </root>
   <root nodeRef="r:520b81fe-c35f-4001-9d28-daa76968213e(pipeline.runtime)/2755985269625610114">
