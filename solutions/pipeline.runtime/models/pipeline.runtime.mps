@@ -952,6 +952,33 @@
   </node>
   <node concept="312cEu" id="2oZew0Ud23H">
     <property role="TrG5h" value="SentenceItem" />
+    <node concept="Wx3nA" id="2oZew0Ul19b" role="jymVt">
+      <property role="TrG5h" value="END_OF_SENTENCE" />
+      <property role="2dlcS1" value="false" />
+      <property role="3TUv4t" value="true" />
+      <property role="2dld4O" value="false" />
+      <node concept="3uibUv" id="2oZew0Ul19c" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="Xl_RD" id="2oZew0Ul19d" role="33vP2m">
+        <property role="Xl_RC" value="&lt;END_OF_SENTENCE&gt;" />
+      </node>
+      <node concept="3Tm1VV" id="2oZew0Ul19e" role="1B3o_S" />
+    </node>
+    <node concept="Wx3nA" id="2oZew0Ul19f" role="jymVt">
+      <property role="TrG5h" value="BEGIN_OF_TEXT" />
+      <property role="2dlcS1" value="false" />
+      <property role="3TUv4t" value="true" />
+      <property role="2dld4O" value="false" />
+      <node concept="3uibUv" id="2oZew0Ul19g" role="1tU5fm">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="Xl_RD" id="2oZew0Ul19h" role="33vP2m">
+        <property role="Xl_RC" value="&lt;BEGIN_OF_SENTENCE&gt;" />
+      </node>
+      <node concept="3Tm1VV" id="2oZew0Ul19i" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="2oZew0Ul18A" role="jymVt" />
     <node concept="3clFbW" id="2oZew0Ud27l" role="jymVt">
       <node concept="3cqZAl" id="2oZew0Ud27m" role="3clF45" />
       <node concept="3clFbS" id="2oZew0Ud27n" role="3clF47">
