@@ -9,23 +9,20 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Filter = 0;
-  public static final int FilterReference = 1;
-  public static final int MyExpression = 2;
-  public static final int Output = 3;
-  public static final int Path = 4;
-  public static final int Pipeline = 5;
-  public static final int SentenceExpression = 6;
-  public static final int SplitSentence = 7;
-  public static final int SplitText = 8;
-  public static final int TextExpression = 9;
-  public static final int toEnglish = 10;
-  public static final int toLower = 11;
+  public static final int FilterExpression = 0;
+  public static final int MyExpression = 1;
+  public static final int Output = 2;
+  public static final int Path = 3;
+  public static final int Pipeline = 4;
+  public static final int SentenceExpression = 5;
+  public static final int SplitSentence = 6;
+  public static final int SplitText = 7;
+  public static final int TextExpression = 8;
+  public static final int TokenExpression = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL);
-    builder.put(0x2a3c2aa1feea76a4L, Filter);
-    builder.put(0xc6a96ca6398e404L, FilterReference);
+    builder.put(0xc6a96ca6398e404L, FilterExpression);
     builder.put(0xc6a96ca639c6546L, MyExpression);
     builder.put(0xc6a96ca6398e26dL, Output);
     builder.put(0x2a3c2aa1ff0f8a8eL, Path);
@@ -34,8 +31,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x2a3c2aa1fee9ce93L, SplitSentence);
     builder.put(0x5433b88ac5b47dabL, SplitText);
     builder.put(0x1b5e9c428d392f00L, TextExpression);
-    builder.put(0x2a3c2aa1fee9d9adL, toEnglish);
-    builder.put(0x2a3c2aa1fee9d938L, toLower);
+    builder.put(0x2321802eb867b494L, TokenExpression);
     myIndex = builder.seal();
   }
 

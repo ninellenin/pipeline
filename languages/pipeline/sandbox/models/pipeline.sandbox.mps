@@ -18,39 +18,33 @@
     </language>
     <language id="7655a5e7-076c-42d6-b885-3f94b3d29c6b" name="pipeline">
       <concept id="6067396029160127879" name="pipeline.structure.Pipeline" flags="ng" index="2hxWkd">
-        <child id="3043354323453076047" name="filter" index="3lbszI" />
-        <child id="894693271984988820" name="output" index="1JWBhu" />
+        <child id="2531445403709508236" name="from" index="2rhKEy" />
+        <child id="2531445403709508243" name="to" index="2rhKEX" />
       </concept>
       <concept id="6067396029160127915" name="pipeline.structure.SplitText" flags="ng" index="2hxWkx">
-        <child id="2755985269626040946" name="text" index="suWxM" />
+        <child id="2531445403709508670" name="text" index="2rhKKg" />
       </concept>
       <concept id="3043354323452922510" name="pipeline.structure.Path" flags="ng" index="3lcU0J">
         <property id="3043354323452922619" name="value" index="3lcU1q" />
       </concept>
-      <concept id="894693271984989188" name="pipeline.structure.FilterReference" flags="ng" index="1JWBbe">
-        <reference id="894693271984989216" name="filter" index="1JWBbE" />
+      <concept id="894693271984989188" name="pipeline.structure.FilterExpression" flags="ng" index="1JWBbe">
+        <child id="6362316727019275066" name="filter" index="3QMvTw" />
       </concept>
-      <concept id="894693271984988781" name="pipeline.structure.Output" flags="ng" index="1JWBiB">
-        <child id="894693271984988809" name="from" index="1JWBh3" />
-        <child id="894693271984988812" name="to" index="1JWBh6" />
-      </concept>
+      <concept id="894693271985218886" name="pipeline.structure.MyExpression" flags="ng" index="1JXJec" />
     </language>
   </registry>
-  <node concept="2hxWkd" id="2oZew0Uhz9K">
+  <node concept="2hxWkd" id="2oZew0Umvox">
     <property role="TrG5h" value="SimplePipeline" />
-    <node concept="1JWBiB" id="2oZew0Uhz9M" role="1JWBhu">
-      <node concept="1JWBbe" id="2oZew0UlJcY" role="1JWBh3">
-        <ref role="1JWBbE" node="2oZew0UlduU" resolve="a" />
-      </node>
-      <node concept="3lcU0J" id="2oZew0Uhza$" role="1JWBh6">
-        <property role="3lcU1q" value="D:/output.txt" />
-      </node>
+    <node concept="3lcU0J" id="2oZew0Umvp1" role="2rhKEX">
+      <property role="3lcU1q" value="D:/output.txt" />
+      <node concept="1JXJec" id="2oZew0Umvp4" role="3QMvTw" />
     </node>
-    <node concept="2hxWkx" id="2oZew0UlduU" role="3lbszI">
-      <property role="TrG5h" value="a" />
-      <node concept="3lcU0J" id="2oZew0Uldv2" role="suWxM">
+    <node concept="2hxWkx" id="2oZew0UmMbk" role="2rhKEy">
+      <node concept="3lcU0J" id="2oZew0UmMbC" role="2rhKKg">
         <property role="3lcU1q" value="D:/PipelineRight/input.txt" />
+        <node concept="1JXJec" id="2oZew0UmMbF" role="3QMvTw" />
       </node>
+      <node concept="1JXJec" id="2oZew0UmMbt" role="3QMvTw" />
     </node>
   </node>
 </model>

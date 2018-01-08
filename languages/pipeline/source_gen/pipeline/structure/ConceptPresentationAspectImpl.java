@@ -9,8 +9,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private ConceptPresentation props_Filter;
-  private ConceptPresentation props_FilterReference;
+  private ConceptPresentation props_FilterExpression;
   private ConceptPresentation props_MyExpression;
   private ConceptPresentation props_Output;
   private ConceptPresentation props_Path;
@@ -19,27 +18,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_SplitSentence;
   private ConceptPresentation props_SplitText;
   private ConceptPresentation props_TextExpression;
-  private ConceptPresentation props_toEnglish;
-  private ConceptPresentation props_toLower;
+  private ConceptPresentation props_TokenExpression;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
-      case LanguageConceptSwitch.Filter:
-        if (props_Filter == null) {
+      case LanguageConceptSwitch.FilterExpression:
+        if (props_FilterExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_Filter = cpb.create();
+          cpb.rawPresentation("FilterExpression");
+          props_FilterExpression = cpb.create();
         }
-        return props_Filter;
-      case LanguageConceptSwitch.FilterReference:
-        if (props_FilterReference == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x7655a5e7076c42d6L, 0xb8853f94b3d29c6bL, 0xc6a96ca6398e404L, 0xc6a96ca6398e420L, "filter", "", "");
-          props_FilterReference = cpb.create();
-        }
-        return props_FilterReference;
+        return props_FilterExpression;
       case LanguageConceptSwitch.MyExpression:
         if (props_MyExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -78,14 +70,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.SplitSentence:
         if (props_SplitSentence == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("SentenceToTokens");
           props_SplitSentence = cpb.create();
         }
         return props_SplitSentence;
       case LanguageConceptSwitch.SplitText:
         if (props_SplitText == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
+          cpb.rawPresentation("splitText");
           props_SplitText = cpb.create();
         }
         return props_SplitText;
@@ -96,20 +88,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_TextExpression = cpb.create();
         }
         return props_TextExpression;
-      case LanguageConceptSwitch.toEnglish:
-        if (props_toEnglish == null) {
+      case LanguageConceptSwitch.TokenExpression:
+        if (props_TokenExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_toEnglish = cpb.create();
+          cpb.rawPresentation("TokenExpression");
+          props_TokenExpression = cpb.create();
         }
-        return props_toEnglish;
-      case LanguageConceptSwitch.toLower:
-        if (props_toLower == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByName();
-          props_toLower = cpb.create();
-        }
-        return props_toLower;
+        return props_TokenExpression;
     }
     return null;
   }
